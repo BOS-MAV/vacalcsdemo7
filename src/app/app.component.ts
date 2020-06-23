@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Calculator } from './models/calculator.model';
+const data = require('./calculators-data.json');
 
 @Component({
   selector: 'app-root',
@@ -11,28 +13,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
-  public appPages = [
-    {
-      title: 'Calculator 1',
-      url: '/folder/Inbox'
-    },
-    {
-      title: 'Calculator 2',
-      url: '/folder/Outbox'
-    },
-    {
-      title: 'Calculator 3',
-      url: '/folder/Favorites'
-    },
-    {
-      title: 'Unit Converter',
-      url: '/folder/Archived'
-    },
-    {
-      title: 'About',
-      url: '/folder/Archived'
-    }
-  ];
+  public appPages = [];
+  public calculators: Calculator[];
 
   constructor(
     private platform: Platform,
@@ -50,6 +32,11 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.calculators = [];
+    for (const calc of data.calculators) {
+      this.appPages.push({title: calc.name, url: 'folder/' + calc.name });
+      this.calculators.push(new Calculator(calc));
+    }
     const path = window.location.pathname.split('folder/')[1];
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());

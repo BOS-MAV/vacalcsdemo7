@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Question} from '../models/question.model';
 
 @Component({
   selector: 'app-question',
@@ -6,11 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./question.component.scss'],
 })
 export class QuestionComponent implements OnInit {
-  public questionText: string;
-
-  constructor() {
-    this.questionText = 'lorem ipsum';
-   }
+  public model: Question;
 
   ngOnInit() {}
 

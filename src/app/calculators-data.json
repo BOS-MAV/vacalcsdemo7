@@ -1,0 +1,57 @@
+{
+    "calculators": [
+        {
+            "name": "HeartFailureRisk",
+            "description": "lorem ipsum risk of heart failure",
+            "calcFunction": "calc_risk_HF",
+            "questionGroups": [
+                {
+                    "title": "group1",
+                    "description": "lorem ipsum",
+                    "questions": [
+                        {
+                            "text": "Age",
+                            "description": "lorem ipsum",
+                            "type": "number",
+                            "min": 0,
+                            "max": 130
+                        },
+                        {
+                            "text": "Weight",
+                            "description": "lorem ipsum",
+                            "type": "number",
+                            "min": 0,
+                            "max": 500
+                        }
+                    ]
+                },
+                {
+                    "title": "group2",
+                    "description": "lorem ipsum",
+                    "questions": [
+                        {
+                            "text": "Diabetes",
+                            "description": "lorem ipsum",
+                            "type": "checkbox"
+                        },
+                        {
+                            "text": "Test Question",
+                            "description": "lorem ipsum",
+                            "type": "number",
+                            "min": 0,
+                            "max": 100
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ASCVDRisk",
+            "description": "lorem ipsum ASCVD failure",
+            "calcFunction": "calc_risk_ASCVD",
+            "questionGroups": [
+
+            ]
+        }
+    ]
+}
