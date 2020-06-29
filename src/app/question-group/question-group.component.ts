@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { QuestionComponent } from '../question/question.component';
 import {QuestionGroup} from '../models/question-group.model';
 
@@ -8,7 +8,7 @@ import {QuestionGroup} from '../models/question-group.model';
   styleUrls: ['./question-group.component.scss'],
 })
 export class QuestionGroupComponent implements OnInit{
-  public model: QuestionGroup;
+  @Input() public model: QuestionGroup;
 
   ngOnInit() {}
 }

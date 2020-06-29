@@ -1,16 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { QuestionGroupComponent } from '../question-group/question-group.component';
 import { Calculator } from '../models/calculator.model';
 
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
-  styleUrls: ['./calculator.component.scss'],
+  styleUrls: ['./calculator.page.scss'],
 })
 export class CalculatorComponent implements OnInit{
 
-  public model: Calculator;
+  @Input() public model: Calculator;
 
-  ngOnInit() {}
-
+    ngOnInit() {
+    // this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+  }
 }

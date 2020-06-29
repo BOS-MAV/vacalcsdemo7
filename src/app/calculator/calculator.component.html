@@ -1,3 +1,12 @@
-<div class="calculator-main">
-    <div *ngFor="let questionGroup of model.questionGroups">{{questionGroup}}</div>
+<div id="calculator-main">
+  <ion-card>
+    <ion-card-header><h2>{{model.name}}</h2></ion-card-header>
+    <ion-card-content>
+      <p style="text-align: left;">{{model.description}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="calculator-question-groups" *ngFor="let questionGroup of model.questionGroups"><app-question-group [model]="questionGroup"></app-question-group></div>
+
+  <ion-button expand="block">Confirm and see results</ion-button>
 </div>

@@ -8,16 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CalculatorComponent } from './calculator/calculator.component';
-import { QuestionGroupComponent } from './question-group/question-group.component';
-import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CalculatorComponent,
-    QuestionGroupComponent,
-    QuestionComponent
+    AppComponent
   ],
   entryComponents: [],
   imports: [

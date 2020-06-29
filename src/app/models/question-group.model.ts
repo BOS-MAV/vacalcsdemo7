@@ -5,6 +5,7 @@ export class QuestionGroup {
     questions: Question[];
 
     constructor(input: any) {
+        this.questions = [];
         if (input.questions) {
             for (let q of input.questions) {
                 this.questions.push(new Question(q));

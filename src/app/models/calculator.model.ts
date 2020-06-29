@@ -7,6 +7,7 @@ export class Calculator{
     questionGroups: QuestionGroup[];
 
     constructor(input: any) {
+        this.questionGroups = [];
         this.name = input.name;
         this.description = input.description;
         this.calcFunction = input.calcFunction;
