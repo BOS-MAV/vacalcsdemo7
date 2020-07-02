@@ -1,3 +1,61 @@
+/*  function name: convSI
+ *  Author: J. Russo
+ *  Date: July 1, 2020
+ * 
+ *  Input:  LabName     name of lab
+ *          LabValue    value of lab result
+ *          Type        type of unit (0 for conventional, 1 for SI)
+ * 
+ *  Output: SIValue     value of lab result converted from convention to SI or SI to conventional
+ * 
+ *  Description:        This function accepts the name of a lab and the value. It then looks up the conversion
+ *                      factor from a JSON file and returns either the value in SI units or the value in 
+ *                      conventional units.
+ */
+
+function convSI (LabName,LabValue,Type)
+{
+    var factor = new Map();
+    var specimen = new Map();
+    var convUnit = new Map();
+    var SI_Unit = new Map();
+    var retVal;
+    data = new Object();
+        $.ajax({ 
+       // url: 'https://bos-mav.github.io/json/si%20conversions%20comp.json', 
+        url: "si conversions.json",
+        dataType: 'json', 
+        data: data, 
+        async: false, 
+        success: function(data){ 
+        if (data.length > 0) {
+            //var arrItems = [];              // The array to store JSON data.
+            $.each(data, function (index, value) {
+                //arrItems.push(value);       // Push the value inside the array.
+                factor.set(value.Analyte,value.Factor);
+                specimen.set(value.Analyte,value.Specimen);
+                convUnit.set(value.Analyte,value.ConvUnit);
+                SI_Unit.set(value.Analyte,value.SI_Unit);
+            });
+                // alert(arrItems[0]['Analyte']);
+               // var msg = factor.get('Adenosine deaminase')+' '+SI_Unit.get('Adenosine deaminase');
+               // alert(msg);
+                                  
+            }
+            }
+            });
+      
+    if (Type === 0)
+       {
+          retVal = factor.get(LabName) * LabValue;
+    }
+    else
+    {
+        retVal = factor.get(LabName)/LabValue;
+    }
+    return retVal;
+}
+
 //heart failure calculator risk calc code
     var          HFpEFCoeff = [],
                  HFrEFCoeff = [];
