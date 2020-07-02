@@ -10,6 +10,9 @@ import { CalculatorComponent } from './calculator.component';
 import { CalculatorPage } from './calculator.page';
 import { QuestionGroupComponent } from '../question-group/question-group.component';
 import { QuestionComponent } from '../question/question.component';
+import { InputNumberComponent } from '../question-input/input-number.component';
+import { InputSelectComponent } from '../question-input/input-select.component';
+import { InputToggleComponent } from '../question-input/input-toggle.component';
 
 @NgModule({
   imports: [
@@ -22,7 +25,10 @@ import { QuestionComponent } from '../question/question.component';
     CalculatorComponent,
     QuestionGroupComponent,
     QuestionComponent,
-    CalculatorPage
+    CalculatorPage,
+    InputNumberComponent,
+    InputToggleComponent,
+    InputSelectComponent
   ]
 })
 export class CalculatorModule {}

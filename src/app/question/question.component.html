@@ -1,4 +1,8 @@
 <div class="question-div">
-  <p>{{model.text}}</p>
-  
+  <!-- <p>{{model.text}}</p> -->
+  <div [ngSwitch]="model?.type">
+    <app-input-select  *ngSwitchCase="'select'" [model]="model"></app-input-select>
+    <app-input-number *ngSwitchCase="'number'" [model]="model"></app-input-number>
+    <app-input-toggle *ngSwitchCase="'toggle'" [model]="model"></app-input-toggle>
+  </div>
 </div>

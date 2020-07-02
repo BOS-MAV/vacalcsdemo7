@@ -1,0 +1,5 @@
+<span><label for="{{model.id}}">{{model.text}}</label>
+    <select id="{{model.id}}">
+        <option *ngFor="let opt of model.options" [value]="opt.key">{{opt.value}}</option>
+    </select>
+</span>

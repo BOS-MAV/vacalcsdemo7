@@ -11,6 +11,7 @@
                     "description": "lorem ipsum",
                     "questions": [
                         {
+                            "id": "c1qg1q1",
                             "text": "Age",
                             "description": "lorem ipsum",
                             "type": "number",
@@ -18,6 +19,7 @@
                             "max": 130
                         },
                         {
+                            "id": "c1qg1q2",
                             "text": "Weight",
                             "description": "lorem ipsum",
                             "type": "number",
@@ -31,11 +33,13 @@
                     "description": "lorem ipsum",
                     "questions": [
                         {
+                            "id": "c1qg2q1",
                             "text": "Diabetes",
                             "description": "lorem ipsum",
-                            "type": "checkbox"
+                            "type": "toggle"
                         },
                         {
+                            "id": "c1qg2q2",
                             "text": "Test Question",
                             "description": "lorem ipsum",
                             "type": "number",

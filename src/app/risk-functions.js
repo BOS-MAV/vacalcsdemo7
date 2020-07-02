@@ -23,7 +23,7 @@ function convSI (LabName,LabValue,Type)
     data = new Object();
         $.ajax({ 
        // url: 'https://bos-mav.github.io/json/si%20conversions%20comp.json', 
-        url: "si conversions.json",
+        url: "si-conversions.json",
         dataType: 'json', 
         data: data, 
         async: false, 

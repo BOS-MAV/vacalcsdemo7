@@ -1,14 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { QuestionInput } from '../models/question-input.model';
 
-@Component({
-  selector: 'app-question-input',
-  templateUrl: './question-input.component.html',
-  styleUrls: ['./question-input.component.scss'],
-})
-export class QuestionInputComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {}
-
+export interface QuestionInputComponent extends OnInit {
+  model: QuestionInput;
 }
