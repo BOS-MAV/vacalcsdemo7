@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: CalculatorPage
+  },  {
+    path: 'calc-results',
+    loadChildren: () => import('./calc-results/calc-results.module').then( m => m.CalcResultsPageModule)
   }
+
 ];
 
 @NgModule({
