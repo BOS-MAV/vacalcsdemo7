@@ -13,6 +13,7 @@ import { QuestionComponent } from '../question/question.component';
 import { InputNumberComponent } from '../question-input/input-number.component';
 import { InputSelectComponent } from '../question-input/input-select.component';
 import { InputToggleComponent } from '../question-input/input-toggle.component';
+import { CalculatorResultsPage } from './calc-results/calc-results.page';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { InputToggleComponent } from '../question-input/input-toggle.component';
     CalculatorPage,
     InputNumberComponent,
     InputToggleComponent,
-    InputSelectComponent
+    InputSelectComponent,
+    CalculatorResultsPage
   ]
 })
 export class CalculatorModule {}
