@@ -1,5 +1,5 @@
 <ion-card class="question-group-card">
   <ion-card-content>
-    <div *ngFor="let question of model.questions"><app-question [model]="question"></app-question></div>
+    <div *ngFor="let question of model.questions"><app-question [model]="question" (questionValueChange)="onChange($event)"></app-question></div>
   </ion-card-content>
 </ion-card>

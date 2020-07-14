@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { QuestionComponent } from '../question/question.component';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 import {QuestionGroup} from '../models/question-group.model';
 
 @Component({
@@ -7,8 +6,12 @@ import {QuestionGroup} from '../models/question-group.model';
   templateUrl: './question-group.component.html',
   styleUrls: ['./question-group.component.scss'],
 })
-export class QuestionGroupComponent implements OnInit{
+export class QuestionGroupComponent {
   @Input() public model: QuestionGroup;
+  @Output() questionGroupValueChange = new EventEmitter();
 
-  ngOnInit() {}
+  onChange(change: any) {
+    this.model.questions.forEach(_ => _.value = _.id === change.id ? change.val : _.value);
+    this.questionGroupValueChange.emit(this.model);
+  }
 }

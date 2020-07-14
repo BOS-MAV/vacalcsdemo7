@@ -1,5 +1,3 @@
-import {QuestionInput} from './question-input.model';
-
 export class Question{
     id: string;
     text: string;
@@ -11,6 +9,8 @@ export class Question{
     unitType: string;
     selectedUnit: string;
     unitChoices: string[];
+    value: any;
+    options: object[];
 
     constructor(obj: any) {
         this.text = obj.text;
@@ -18,5 +18,16 @@ export class Question{
         this.type = obj.type;
         this.min = obj.min;
         this.max = obj.max;
+        this.id = obj.id;
+        this.value = obj.value;
+        this.hasUnits = obj.hasUnits;
+        this.unitType = obj.unitType;
+        this.selectedUnit = obj.selectedUnit;
+        this.unitChoices = obj.unitChoices;
+        this.options = obj.options;
+    }
+
+    validate(): boolean {
+        return true;
     }
 }

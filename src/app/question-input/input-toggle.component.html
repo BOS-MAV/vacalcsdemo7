@@ -1,1 +1,1 @@
-<span><label for="{{model.id}}">{{model.text}}</label><ion-toggle id="{{model.id}}" ></ion-toggle></span>
+<span><label for="{{model.id}}">{{model.text}}</label><ion-toggle id="{{model.id}}" (ionChange)="onChange($event.target.checked)"></ion-toggle></span>

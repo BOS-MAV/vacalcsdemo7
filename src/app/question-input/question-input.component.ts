@@ -1,6 +1,13 @@
-import { OnInit } from '@angular/core';
-import { QuestionInput } from '../models/question-input.model';
+import { Input, Output, EventEmitter } from '@angular/core';
+import { Question } from '../models/question.model';
+// import { FormsModule } from '@angular/forms';
 
-export interface QuestionInputComponent extends OnInit {
-  model: QuestionInput;
+export abstract class QuestionInputComponent{
+  @Input() model: Question;
+  @Output() inputValueChange = new EventEmitter();
+
+  onChange(change: any) {
+    this.model.value = change;
+    this.inputValueChange.emit(change);
+  }
 }

@@ -1,7 +1,7 @@
 {
     "calculators": [
         {
-            "id": "1",
+            "id": "c1",
             "name": "HeartFailureRisk",
             "description": "lorem ipsum risk of heart failure",
             "calcFunction": "calc_risk_HF",
@@ -51,7 +51,7 @@
             ]
         },
         {
-            "id": "2",
+            "id": "c2",
             "name": "ASCVDRisk",
             "description": "lorem ipsum ASCVD failure",
             "calcFunction": "calc_risk_ASCVD",

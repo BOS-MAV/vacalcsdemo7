@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { QuestionInput } from '../models/question-input.model';
+import { Question } from '../models/question.model';
 import { QuestionInputComponent } from './question-input.component';
 
 @Component({
@@ -7,11 +7,7 @@ import { QuestionInputComponent } from './question-input.component';
   templateUrl: './input-select.component.html',
   styleUrls: ['./question-input.component.scss'],
 })
-export class InputSelectComponent implements QuestionInputComponent {
-  @Input() public model: QuestionInput;
-
-  constructor() { }
-
-  ngOnInit() {}
+export class InputSelectComponent extends QuestionInputComponent {
+  @Input() public model: Question;
 
 }

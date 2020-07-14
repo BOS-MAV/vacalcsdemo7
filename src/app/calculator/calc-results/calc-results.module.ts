@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CalcResultsPageRoutingModule } from './calc-results-routing.module';
+//import { CalcResultsPageRoutingModule } from './calc-results-routing.module';
 
 import { CalcResultsPage } from './calc-results.page';
 
@@ -13,7 +13,7 @@ import { CalcResultsPage } from './calc-results.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CalcResultsPageRoutingModule
+    //CalcResultsPageRoutingModule
   ],
   declarations: [CalcResultsPage]
 })
