@@ -9,5 +9,4 @@ import { QuestionInputComponent } from './question-input.component';
 })
 export class InputSelectComponent extends QuestionInputComponent {
   @Input() public model: Question;
-
 }
