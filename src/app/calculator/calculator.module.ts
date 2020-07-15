@@ -6,7 +6,6 @@ import { IonicModule } from '@ionic/angular';
 
 import { CalculatorRoutingModule } from './calculator-routing.module';
 
-import { CalculatorComponent } from './calculator.component';
 import { CalculatorPage } from './calculator.page';
 import { QuestionGroupComponent } from '../question-group/question-group.component';
 import { QuestionComponent } from '../question/question.component';
@@ -23,7 +22,6 @@ import { CalculatorResultsPage } from './calc-results/calc-results.page';
     CalculatorRoutingModule
   ],
   declarations: [
-    CalculatorComponent,
     QuestionGroupComponent,
     QuestionComponent,
     CalculatorPage,
