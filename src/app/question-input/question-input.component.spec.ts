@@ -9,11 +9,11 @@ describe('QuestionInputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuestionInputComponent ],
+     // declarations: [ QuestionInputComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(QuestionInputComponent);
+    //fixture = TestBed.createComponent(QuestionInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
