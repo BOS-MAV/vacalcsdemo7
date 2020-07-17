@@ -23,6 +23,6 @@ export class QuestionGroup {
         }
     }
     validate(): boolean {
-        return this.questions.some(_ => !_.validate());
+        return !this.questions.some(_ => !_.validate());
     }
 }

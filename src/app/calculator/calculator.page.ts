@@ -39,7 +39,7 @@ export class CalculatorPage implements OnInit {
     for (const qg of this.model.questionGroups) {
       for (const q of qg.questions){
         if (q.value){
-          responses[q.id] = q.value;
+          responses[q.id] = q.hasUnits ? q.value + ':' + q.selectedUnit : q.value;
         }
       }
     }

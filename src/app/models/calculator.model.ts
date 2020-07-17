@@ -24,6 +24,6 @@ export class Calculator{
     }
 
     validate(): boolean {
-        return this.questionGroups.some(_ => !_.validate());
+        return !this.questionGroups.some(_ => !_.validate());
     }
 }

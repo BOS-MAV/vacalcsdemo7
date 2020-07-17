@@ -9,10 +9,4 @@ import { Question } from '../models/question.model';
 })
 export class InputToggleComponent extends QuestionInputComponent {
   @Input() public model: Question;
-
-  validate() {
-    return this.model
-        && (!this.model.isRequired || this.model.value)
-        && (this.model.value === true || this.model.value === false);
-  }
 }

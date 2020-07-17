@@ -24,7 +24,21 @@
                             "description": "lorem ipsum",
                             "type": "number",
                             "min": 0,
-                            "max": 500
+                            "max": 500,
+                            "isRequired": true,
+                            "hasUnits": true,
+                            "unitOptions": [
+                                {
+                                    "text": "lbs",
+                                    "val": "lbs"
+                                },
+                                {
+                                    "text": "kgs",
+                                    "val": "kgs"
+                                }
+                            ],
+                            "selectedUnit": "kgs"
+
                         }
                     ]
                 },

@@ -11,12 +11,11 @@ export class QuestionComponent {
   @Output() questionValueChange = new EventEmitter();
 
   onChange(change: any) {
-    // changes.prop contains the old and the new value...
-    this.model.value = change;
-    const field = {
-      id: this.model.id,
-      val: this.model.hasUnits ? change + ':' + this.model.selectedUnit : change
-    };
-    this.questionValueChange.emit(field);
+    if (change.val) {
+      this.model.value = change.val;
+    } else if (change.unit) {
+      this.model.selectedUnit = change.unit;
+    }
+    this.questionValueChange.emit(this.model);
   }
 }

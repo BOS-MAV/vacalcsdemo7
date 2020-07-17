@@ -1,5 +1,6 @@
 import { Component, Output, Input, EventEmitter } from '@angular/core';
 import {QuestionGroup} from '../models/question-group.model';
+import { Question } from '../models/question.model';
 
 @Component({
   selector: 'app-question-group',
@@ -10,8 +11,8 @@ export class QuestionGroupComponent {
   @Input() public model: QuestionGroup;
   @Output() questionGroupValueChange = new EventEmitter();
 
-  onChange(change: any) {
-    this.model.questions.forEach(_ => _.value = _.id === change.id ? change.val : _.value);
+  onChange(change: Question) {
+    this.model.questions.forEach(_ => _ = _.id === change.id ? change : _);
     this.questionGroupValueChange.emit(this.model);
   }
 }
