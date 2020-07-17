@@ -9,4 +9,11 @@ import { Question } from '../models/question.model';
 })
 export class InputNumberComponent extends QuestionInputComponent {
   @Input() public model: Question;
+
+  validate() {
+    return this.model
+        && (!this.model.isRequired || this.model.value)
+        && (!this.model.min || this.model.value >= this.model.min)
+        && (!this.model.max || this.model.value <= this.model.max);
+  }
 }

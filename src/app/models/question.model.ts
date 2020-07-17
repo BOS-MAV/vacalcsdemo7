@@ -10,7 +10,8 @@ export class Question{
     selectedUnit: string;
     unitChoices: string[];
     value: any;
-    options: object[];
+    options: Option[];
+    isRequired: boolean;
 
     constructor(obj: any) {
         this.text = obj.text;
@@ -25,9 +26,15 @@ export class Question{
         this.selectedUnit = obj.selectedUnit;
         this.unitChoices = obj.unitChoices;
         this.options = obj.options;
+        this.isRequired = obj.isRequired;
     }
 
     validate(): boolean {
         return true;
     }
+}
+
+export class Option {
+    text: string;
+    val: string;
 }

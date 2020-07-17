@@ -9,4 +9,10 @@ import { QuestionInputComponent } from './question-input.component';
 })
 export class InputSelectComponent extends QuestionInputComponent {
   @Input() public model: Question;
+
+  validate() {
+    return this.model
+        && (!this.model.isRequired || this.model.value)
+        && this.model?.options.some(_ => _.val && _.val === this.model.value);
+  }
 }
