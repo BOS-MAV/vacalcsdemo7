@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { stringify } from 'querystring';
 import { MapType, MethodCall } from '@angular/compiler';
 
-
-
 export  function numberFormat(val:number,decimalPlaces:number) :number
 {
   var multiplier = Math.pow(10,decimalPlaces);
@@ -62,8 +60,33 @@ export class ResultsCalcService {
 
    _results: Number[];
    _vals: Object;
+   _factor = new Map();
+   _specimen = new Map();
+   _convUnit = new Map();
+   _SI_Unit = new Map();
+   
+
 
   constructor(vals:Object,calcType: String) { 
+    //load maps with json
+    let data = new Object();
+    $.ajax({ 
+    url: "si-conversions.json",
+    dataType: 'json', 
+    data: data, 
+    async: false, 
+    success: function(data){ 
+    if (data.length > 0) {
+        //var arrItems = [];              // The array to store JSON data.
+        $.each(data, function (index, value) {
+            this._factor.set(value.Analyte,value.Factor);
+            this._specimen.set(value.Analyte,value.Specimen);
+            this._convUnit.set(value.Analyte,value.ConvUnit);
+            this._SI_Unit.set(value.Analyte,value.SI_Unit);
+        });                 
+        }
+        }
+        });
     let _vals = vals; 
     if (calcType === "HF")
       {
@@ -72,6 +95,10 @@ export class ResultsCalcService {
     else if (calcType == "ASCVD")
     {
         this.calc_risk_ASCVD();
+    }
+    else if (calcType = "ASCVD_Diab")
+    {
+        this.calc_DiaASCVD();
     }
 
   }
