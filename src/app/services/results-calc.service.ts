@@ -18,7 +18,7 @@ export function calc_bmi(ht:number, wt:number, units: number) : number{
   return ret_val;
 }
 
-export function mean_center(coeff:number[] ,cent_var: number,sex:number,race: number): number
+export function mean_center(coeff:number[] ,cent_var: number,sex:String,race: String): number
 /* Function Name:   mean_center
  * Purpose:         This function uses a coefficient to center the mean
  * Input:           coeff: an array of coefficients used for centering
@@ -29,9 +29,9 @@ export function mean_center(coeff:number[] ,cent_var: number,sex:number,race: nu
  */
 {
     var ret_val;
-    if (sex === 0) //male
+    if (sex === "Male") //male
     {
-        if (race === 0) //white
+        if (race === "White") //white
         {
             ret_val = cent_var-coeff[0];
         }
@@ -42,7 +42,7 @@ export function mean_center(coeff:number[] ,cent_var: number,sex:number,race: nu
     }
     else // female
     {
-        if (race === 0) //white
+        if (race === "White") //white
         {
             ret_val = cent_var-coeff[2];
         }
@@ -69,7 +69,7 @@ export class ResultsCalcService {
 
   constructor(vals:Object,calcType: String) { 
     //load maps with json
-    let data = new Object();
+    /*let data = new Object();
     $.ajax({ 
     url: "si-conversions.json",
     dataType: 'json', 
@@ -86,8 +86,9 @@ export class ResultsCalcService {
         });                 
         }
         }
-        });
-    let _vals = vals; 
+        });*/
+   this._vals = vals; 
+   console.log(vals);
     if (calcType === "HF")
       {
           this.hf_calc();
@@ -130,24 +131,25 @@ export class ResultsCalcService {
     var totScore: number;
     //declare variables to hold the rest
     var age:            number = this._vals["age"],
-        sex:            number = this._vals["sex"],
-        race:           number = this._vals["race"],
+        sex:            String = this._vals["sex"],
+        sexNum:         Number = sex === "Male"?0:1,
+        race:           String = this._vals["race"],
+        raceNum:        Number = race === "White"?0:1,
         smoker:         String = this._vals["smoker"],
         SBP:            number = this._vals["SBP"],
-        diabetes:       number = this._vals["diabetes"],
-        hypertension:   number = this._vals["hypertension"],
+        diabetes:       number = this._vals["diabetes"]?1:0,
+        hypertension:   number = this._vals["hypertension"]?1:0,
         BMI:            number = this._vals["BMI"],
         height:         number = this._vals["height"],
         weight:         number = this._vals["weight"],
-        pMI:            number = this._vals["pMI"],
-        aFib:           number = this._vals["aFib"],
-        COPD:           number = this._vals["COPD"],
+        pMI:            number = this._vals["pMI"]?1:0,
+        aFib:           number = this._vals["aFib"]?1:0,
+        COPD:           number = this._vals["COPD"]?1:0,
         scr:            number = this._vals["scr"],
-        pCAD:           number = this._vals["pCAD"],
+        pCAD:            number = this._vals["pCAD"]?1:0,
         age_2:          number,
         age_2ln:        number,
         diabetesWeight: number,
-        hypertension:   number,
         hypertension_t: number,
         SBP_1:          number,
         SBP_2:          number,
@@ -217,15 +219,15 @@ export class ResultsCalcService {
           mcage2ln[1] = mean_center(HFrEFCoeff[1],age_2ln,sex,race);
           if (smoker === "Current")
                  {
-                     let tempSmokeWt0 = "0"+sex.toString()+race.toString()+"1";
-                     let tempSmokeWt1 = "1"+sex.toString()+race.toString()+"1";
+                     let tempSmokeWt0 = "0"+sexNum.toString()+raceNum.toString()+"1";
+                     let tempSmokeWt1 = "1"+sexNum.toString()+raceNum.toString()+"1";
                      smokerWeight[0] = smokingWeight.get(parseInt(tempSmokeWt0,2));
                      smokerWeight[1] = smokingWeight.get(parseInt(tempSmokeWt1,2));
                  }
           else if (smoker === "Former")
                  {
-                    let tempSmokeWt0 = "0"+sex.toString()+race.toString()+"0";
-                    let tempSmokeWt1 = "1"+sex.toString()+race.toString()+"0";
+                    let tempSmokeWt0 = "0"+sexNum.toString()+raceNum.toString()+"0";
+                    let tempSmokeWt1 = "1"+sexNum.toString()+raceNum.toString()+"0";
                     smokerWeight[0] = smokingWeight.get(parseInt(tempSmokeWt0,2));
                     smokerWeight[1] = smokingWeight.get(parseInt(tempSmokeWt1,2));
                  }
@@ -247,28 +249,28 @@ export class ResultsCalcService {
              BMI_1ln = BMI_1*Math.log(BMI);
             //let's calculate eGFR
             //first, get the serum creatinine
-             if ((sex === 1) && (scr <= 0.7)) //female and serum creatinine <= 0.7
+             if ((sex === "Female") && (scr <= 0.7)) //female and serum creatinine <= 0.7
                  {
                      eGFR = 144 *Math.pow((scr/0.7),-0.329) * Math.pow(0.993,age);
-                     if (race === 1) //African American
+                     if (race === "African American") //African American
                          eGFR = eGFR*1.159;
                  }
-                 else if ((sex === 1) && (scr > 0.7)) //female and serum creatinine > 0.7
+                 else if ((sex === "Female") && (scr > 0.7)) //female and serum creatinine > 0.7
                  {
                      eGFR = 144 *Math.pow((scr/0.7),-1.209) * Math.pow(0.993,age);
-                     if (race === 1) //African American
+                     if (race === "African American") //African American
                          eGFR = eGFR*1.159;
                  }
-                 else if ((sex === 0) && (scr <= 0.9)) //male and serum creatinine <= 0.9
+                 else if ((sex === "Male") && (scr <= 0.9)) //male and serum creatinine <= 0.9
                  {
                      eGFR = 144 *Math.pow((scr/0.9),-0.411) * Math.pow(0.993,age);
-                     if (race === 1) //African American
+                     if (race === "African American") //African American
                          eGFR = eGFR*1.159;
                  }
-                 else if ((sex === 0) && (scr > 0.9)) //male and serum creatinine > 0.9
+                 else if ((sex === "Male") && (scr > 0.9)) //male and serum creatinine > 0.9
                  {
                      eGFR = 144 *Math.pow((scr/0.9),-1.209)* Math.pow(0.993,age);
-                     if (race === 1) //African American
+                     if (race === "African American") //African American
                          eGFR = eGFR*1.159;
                  }
                  eGFR2 = Math.pow(eGFR,2);
@@ -293,7 +295,7 @@ export class ResultsCalcService {
                  //egfr2
                  mcegfr2[0] = mean_center(HFpEFCoeff[7],eGFR2,sex,race);
                  mcegfr2[1] = mean_center(HFrEFCoeff[7],eGFR2,sex,race);
-                 if ((sex === 0) && (race ===0)) //white male
+                 if ((sex === "Male") && (race ==="White")) //white male
                  {
                      //first HFpEF
                      xBeta[0] = mcage2[0]*-23673 + mcage2ln[0] * 5920.4 + diabetes*0.53733 + mcbmi1[0]*-270.14+mcbmi2[0]*3066+mcsbp1[0]*-1049.4+mcsbp2[0]*60782;
@@ -304,7 +306,7 @@ export class ResultsCalcService {
                      xBeta[1] += hypertension * 0.27418 + pMI * 0.86422 + pCAD * 0.58366 + aFib * 0.4946 + smokerWeight[1] + COPD * 0.37526 + mcegfr1[1] * -0.053074;
                      xBeta[1] += mcegfr2[1] * 0.0003372;
                  }
-                 else if ((sex === 0) && (race ===1)) //African American male
+                 else if ((sex === "Male") && (race === "African American")) //African American male
                  {
                      //first HFpEF
                      xBeta[0] = mcage2[0]*10787 + mcage2ln[0] * -3908.1 + diabetes*0.63235 + mcbmi1[0]*-234.58+mcbmi2[0]*2750.4+mcsbp1[0]*-1217+mcsbp2[0]*70479;
@@ -315,7 +317,7 @@ export class ResultsCalcService {
                      xBeta[1] += hypertension * 0.31285 + pMI * 0.89877 + pCAD * 0.53809+ aFib * 0.65053 + smokerWeight[1] + COPD * 0.26295 + mcegfr1[1] * -0.042165;
                      xBeta[1] += mcegfr2[1] * 0.0002299;
                  }
-                 else if ((sex === 1) && (race === 0)) //White Female
+                 else if ((sex === "Female") && (race === "White")) //White Female
                  {
                      //first HFpEF
                      xBeta[0] = mcage2[0]*13951 + mcage2ln[0] * -5302.1 + diabetes*0.52417 + mcbmi1[0]*-248+mcbmi2[0]*2843.3+mcsbp1[0]*-959.22+mcsbp2[0]*58317;
@@ -326,7 +328,7 @@ export class ResultsCalcService {
                      xBeta[1] += hypertension * 0.41315 + pMI * 1.0276 + pCAD * 0.50868 + aFib * 0.91438 + smokerWeight[1] + COPD * 0.43042 + mcegfr1[1] *-0.056461;
                      xBeta[1] += mcegfr2[1] * 0.0003536;
                  }
-                 else if ((sex === 1) && (race === 1)) //African American Female
+                 else if ((sex === "Female") && (race === "African American")) //African American Female
                  {
                      //first HFpEF
                      xBeta[0] = mcage2[0]*64403 + mcage2ln[0] * -19488 + diabetes*1.0977 + mcbmi1[0]*-159.4+mcbmi2[0]*1857.7+mcsbp1[0]*-1545.1+mcsbp2[0]*93175;
@@ -339,30 +341,34 @@ export class ResultsCalcService {
                  }
                  eXbeta[0] = Math.exp(xBeta[0]);
                  eXbeta[1] = Math.exp(xBeta[1]);
-                 if ((sex === 0) && (race ===0)) //white male
+             
+                 if ((sex === "Male") && (race ==="White")) //white male
                  {
                      risk[0] = 1- Math.pow(0.9876515,eXbeta[0]);
                      risk[1] = 1 - Math.pow(0.9815184,eXbeta[1]);
                  }
-                 else  if ((sex === 0) && (race ===1)) //African American male
+                 else  if ((sex === "Male") && (race ==="African American")) //African American male
                  {
                      risk[0] = 1- Math.pow(0.9874179,eXbeta[0]);
                      risk[1] = 1 - Math.pow(0.9772750,eXbeta[1]);
                  }
-                 else if ((sex === 1) && (race ===0)) //white females
+                 else if ((sex === "Female") && (race ==="White")) //white females
                  {
                      risk[0] = 1- Math.pow(0.9923794,eXbeta[0]);
                      risk[1] = 1 - Math.pow(0.9936674,eXbeta[1]);
                  }
-                 else if ((sex === 1) && (race ===1)) //African American females
+                 else if ((sex === "Female") && (race ==="African American")) //African American females
                  {
                      risk[0] = 1- Math.pow(0.9936079,eXbeta[0]);
                      risk[1] = 1 - Math.pow(0.9941458,eXbeta[1]);
                  }
                  risk[0] = numberFormat(risk[0]*100,2);
                  risk[1] = numberFormat(risk[1]*100,2)
+                 console.log(sex);
+                 console.log(race);
+                 console.log(this._vals["BMI"]);
                  console.log(risk[0]);
-                 console.log(risk[1]);
+              
                  this._results = risk;
   }   
 
@@ -373,18 +379,21 @@ export class ResultsCalcService {
     var age:                number = this._vals["age"],
         age5:               number,
         age5Weight:         number,
-        sex:                number = this._vals["sex"],
+        sex:                String = this._vals["sex"],
+        sexNum:             number = sex==="Male"?0:1,
         sexWeight:          number,
-        race:               number = this._vals["race"],
+        race:               String = this._vals["race"],
+        raceNum:            number = race==="White"?0:1,
         race_t:             number,
         raceWeight:         number,
-        diabetes:           number = this._vals["diabetes"],
+        diabetes:           number = this._vals["diabetes"]?1:0,
         diabetesWeight:     number,
-        smoker:             number = this._vals["smoker"],
+        smoker:             String = this._vals["smoker"],
+        smokerNum:          number = smoker==="Ever"?1:0,
         smokerWeight:       number,
-        hypertension:       number = this._vals["hypertension"],
+        hypertension:       number = this._vals["hypertension"]?1:0,
         hypertension_t:     number,
-        statin:             number = this._vals["statin"],
+        statin:             number = this._vals["statin"]?1:0,
         statin_t:           number,
         bpSys:              number = this._vals["SBP"],
         diastolic:          number = this._vals["DBP"],
@@ -404,10 +413,10 @@ export class ResultsCalcService {
     //(05/2020) this now needs to be split out based on statin or not statin use
     age5 = age/5;
     age5Weight = age5*0.20551;
-    sexWeight = sex * 0.46515;
-    raceWeight = race * -0.17661;
+    sexWeight = sexNum * 0.46515;
+    raceWeight = raceNum * -0.17661;
     diabetesWeight = diabetes * 0.48240;
-    smokerWeight = smoker * 0.41682;
+    smokerWeight = smokerNum * 0.41682;
     if (totchl_in > 150 && totchl_in < 201)
     {
         totchl = 0.01114;
@@ -426,7 +435,6 @@ export class ResultsCalcService {
     }
     hdlc10 = hdlc/10;
     hdlcWeight = hdlc10 * -0.07256;
-    bpSys = parseInt($("#BP_Sys").val());
     bpSys10 = bpSys/10;
     bpSysWeight = bpSys10*0.08852;
     hypertensionWeight = 0.31875 * hypertension;
@@ -443,16 +451,19 @@ export class ResultsCalcService {
         var age:            number = this._vals["age"],
         ageWeight:          number,
         ageLogSQWeight:     number,
-        sex:                number = this._vals["sex"],
+        sex:                String = this._vals["sex"],
+        sexNum:             number = sex==="Male"?0:1,
         sexWeight:          number,
-        race:               number = this._vals["race"],
+        race:               String = this._vals["race"],
+        raceNum:            number = race==="White"?0:1,
         raceWeight:         number,
-        smoker:             number = this._vals["smoker"],
+        smoker:             String = this._vals["smoker"],
+        smokerNum:          number = smoker==="Ever"?1:0,
         smokerWeight:       number,
-        diabetes:           number = this._vals["diabetes"],
-        hypertension:       number = this._vals["hypertension"],
+        diabetes:           number = this._vals["diabetes"]?1:0,
+        hypertension:       number = this._vals["hypertension"]?1:0,
         hypertension_t:     number,
-        statin:             number = this._vals["statin"],
+        statin:             number = this._vals["statin"]?1:0,
         statinWeight:       number,
         bpSys:              number = this._vals["SBP"],
         totchl:             number = this._vals["totchl"],
@@ -461,7 +472,7 @@ export class ResultsCalcService {
         hdlc:               number = this._vals["hdlc"],
         hdlcWeight:         number,
         ageHdlWeight:       number,
-        bpMed:              number = this._vals["bpmed"],
+        bpMed:              number = this._vals["bpmed"]?1:0,
         bpSysbpMedWeight:   number,
         bpSysbpAgeWeight:   number,
         ageSmokeWeight:     number,
@@ -473,25 +484,25 @@ export class ResultsCalcService {
         insulinWeight:      number,
         sulfonyl:           number = this._vals["sulfonyl"],
         sulfonylWeight:     number,
-        otherDiab:          number = this._vals["otherDiab"],
+        otherDiab:          number = this._vals["otherDiab"]?1:0,
         otherDiabWeight:    number,
         microAlb:           number,
         microAlbWeight:     number,
         xbeta:              number,
         eXbeta:             number,
-        risk:            number;
+        risk:               number;
         ageWeight = Math.log(age)*18.9496
         ageLogSQWeight = Math.log(age)*Math.log(age)*-1.82065;
-        sexWeight = sex * -0.21382
-        raceWeight = race * 0.003490576;
-        smokerWeight = smoker * 3.90106;
+        sexWeight = sexNum * -0.21382
+        raceWeight = raceNum * 0.003490576;
+        smokerWeight = smokerNum * 3.90106;
         totchlWeight = Math.log(totchl)*1.38594;
         chlAgeWeight = Math.log(totchl)*Math.log(age)*-0.17667;
         hdlcWeight = Math.log(hdlc) * 0.42114;
         ageHdlWeight = Math.log(hdlc)*Math.log(age)*-0.17799;
         bpSysbpMedWeight = Math.log(bpSys)*bpMed*0.62768;
         bpSysbpAgeWeight = Math.log(age)*Math.log(bpSys)*bpMed*-0.14554;
-        ageSmokeWeight = Math.log(age)*smoker*-0.92560;        
+        ageSmokeWeight = Math.log(age)*smokerNum*-0.92560;        
         statinWeight = statin*-0.033734;
             if (diabetes===1)
                 {
@@ -533,16 +544,19 @@ export class ResultsCalcService {
     var age:            number = this._vals["age"],
     ageWeight:          number,
     ageLogSQWeight:     number,
-    sex:                number = this._vals["sex"],
+    sex:                String = this._vals["sex"],
+    sexNum:             number = sex==="Male"?0:1,
     sexWeight:          number,
-    race:               number = this._vals["race"],
+    race:               String = this._vals["race"],
+    raceNum:            number = race==="White"?0:1,
     raceWeight:         number,
-    smoker:             number = this._vals["smoker"],
+    smoker:             String = this._vals["smoker"],
+    smokerNum:          number = smoker==="Ever"?1:0,
     smokerWeight:       number,
-    diabetes:           number = this._vals["diabetes"],
-    hypertension:       number = this._vals["hypertension"],
+    diabetes:           number = this._vals["diabetes"]?1:0,
+    hypertension:       number = this._vals["hypertension"]?1:0,
     hypertension_t:     number,
-    statin:             number = this._vals["statin"],
+    statin:             number = this._vals["statin"]?1:0,
     statinWeight:       number,
     bpSys:              number = this._vals["SBP"],
     totchl:             number = this._vals["totchl"],
@@ -551,7 +565,7 @@ export class ResultsCalcService {
     hdlc:               number = this._vals["hdlc"],
     hdlcWeight:         number,
     ageHdlWeight:       number,
-    bpMed:              number = this._vals["bpmed"],
+    bpMed:              number = this._vals["bpmed"]?1:0,
     bpSysbpMedWeight:   number,
     bpSysbpAgeWeight:   number,
     ageSmokeWeight:     number,
@@ -563,26 +577,25 @@ export class ResultsCalcService {
     insulinWeight:      number,
     sulfonyl:           number = this._vals["sulfonyl"],
     sulfonylWeight:     number,
-    otherDiab:          number = this._vals["otherDiab"],
+    otherDiab:          number = this._vals["otherDiab"]?1:0,
     otherDiabWeight:    number,
     microAlb:           number,
     microAlbWeight:     number,
     xbeta:              number,
     eXbeta:             number,
-    risk:            number;
+    risk:               number;
     ageWeight = Math.log(age)*33.5917;
     ageLogSQWeight = Math.log(age)*Math.log(age)*-3.95840;
-    sexWeight = sex * -0.14536;
-    raceWeight = race * -0.26031;
-    smokerWeight = smoker * 2.15214;
+    sexWeight = sexNum * -0.14536;
+    raceWeight = raceNum * -0.26031;
+    smokerWeight = smokerNum * 2.15214;
     totchlWeight = Math.log(totchl)*1.70872;
     chlAgeWeight = Math.log(totchl)*Math.log(age)*-0.22920;
     hdlcWeight = Math.log(hdlc) * -1.78410;
     ageHdlWeight = Math.log(hdlc)*Math.log(age)*0.29576;
-    bpSys = parseInt($("#BP_Sys").val());
     bpSysbpMedWeight = Math.log(bpSys)*bpMed*0.87932;
     bpSysbpAgeWeight = Math.log(age)*Math.log(bpSys)*bpMed*-0.21101;
-    ageSmokeWeight = Math.log(age)*smoker*-0.47557;        
+    ageSmokeWeight = Math.log(age)*smokerNum*-0.47557;        
     statinWeight = 0.037998 * statin;
     if (diabetes === 1)
         {
@@ -617,16 +630,17 @@ export class ResultsCalcService {
     var age:            number = this._vals["age"],
     ageWeight:          number,
     ageLogSQWeight:     number,
-    sex:                number = this._vals["sex"],
+    sex:                number = this._vals["sex"]==="Male"?0:1,
     sexWeight:          number,
-    race:               number = this._vals["race"],
+    race:               number = this._vals["race"]==="White"?0:1,
     raceWeight:         number,
-    smoker:             number = this._vals["smoker"],
+    smoker:             String = this._vals["smoker"],
+    smokerNum:          number = smoker==="Ever"?1:0,
     smokerWeight:       number,
-    diabetes:           number = this._vals["diabetes"],
-    hypertension:       number = this._vals["hypertension"],
+    diabetes:           number = this._vals["diabetes"]?1:0,
+    hypertension:       number = this._vals["hypertension"]?1:0,
     hypertension_t:     number,
-    statin:             number = this._vals["statin"],
+    statin:             number = this._vals["statin"]?1:0,
     statinWeight:       number,
     bpSys:              number = this._vals["SBP"],
     totchl:             number = this._vals["totchl"],
@@ -635,7 +649,7 @@ export class ResultsCalcService {
     hdlc:               number = this._vals["hdlc"],
     hdlcWeight:         number,
     ageHdlWeight:       number,
-    bpMed:              number = this._vals["bpmed"],
+    bpMed:              number = this._vals["bpmed"]?1:0,
     bpSysbpMedWeight:   number,
     bpSysbpAgeWeight:   number,
     ageSmokeWeight:     number,
@@ -647,7 +661,7 @@ export class ResultsCalcService {
     insulinWeight:      number,
     sulfonyl:           number = this._vals["sulfonyl"],
     sulfonylWeight:     number,
-    otherDiab:          number = this._vals["otherDiab"],
+    otherDiab:          number = this._vals["otherDiab"]?1:0,
     otherDiabWeight:    number,
     microAlb:           number,
     microAlbWeight:     number,
@@ -658,24 +672,22 @@ export class ResultsCalcService {
     ageLogSQWeight = Math.log(age)*Math.log(age)*-2.67664;
     sexWeight = sex * -0.13267;
     raceWeight = race * 0.26215;
-    smokerWeight = smoker * 4.29949;
+    smokerWeight = smokerNum * 4.29949;
     totchlWeight = Math.log(totchl)*-0.17577;
     chlAgeWeight = Math.log(totchl)*Math.log(age)*0.19084;
     hdlcWeight = Math.log(hdlc) * 1.88671;
     ageHdlWeight = Math.log(hdlc)*Math.log(age)*-0.50053;
     bpSysbpMedWeight = Math.log(bpSys)*bpMed*0.81686;
     bpSysbpAgeWeight = Math.log(age)*Math.log(bpSys)*bpMed*-0.18904;
-    ageSmokeWeight = Math.log(age)*smoker*-1.01281;        
+    ageSmokeWeight = Math.log(age)*smokerNum*-1.01281;        
     statinWeight = -0.053618 * statin;
     if (diabetes === 1)
     {
         a1cWeight = Math.log(a1c)*1.08183;
-        egfr = parseInt($("#eGFR").val());
         egfrWeight = Math.log(egfr)*-0.16523;
         insulinWeight = insulin * 0.17974;
         sulfonylWeight = sulfonyl * 0.080476;
         otherDiabWeight = otherDiab * -0.074728;
-        microAlb = parseInt($("#mcAlb").val());
         microAlbWeight = microAlb * 0.002229916;   
      }
      else
@@ -702,16 +714,16 @@ export class ResultsCalcService {
         var age:            number = this._vals["age"],
         ageWeight:          number,
         ageLogSQWeight:     number,
-        sex:                number = this._vals["sex"],
+        sex:                number = this._vals["sex"]==="Male"?0:1,
         sexWeight:          number,
-        race:               number = this._vals["race"],
+        race:               number = this._vals["race"]==="White"?0:1,
         raceWeight:         number,
-        smoker:             number = this._vals["smoker"],
+        smoker:             number = this._vals["smoker"]==="Ever"?1:0,
         smokerWeight:       number,
-        diabetes:           number = this._vals["diabetes"],
-        hypertension:       number = this._vals["hypertension"],
+        diabetes:           number = this._vals["diabetes"]?1:0,
+        hypertension:       number = this._vals["hypertension"]?1:0,
         hypertension_t:     number,
-        statin:             number = this._vals["statin"],
+        statin:             number = this._vals["statin"]?1:0,
         statinWeight:       number,
         bpSys:              number = this._vals["SBP"],
         totchl:             number = this._vals["totchl"],
@@ -720,7 +732,7 @@ export class ResultsCalcService {
         hdlc:               number = this._vals["hdlc"],
         hdlcWeight:         number,
         ageHdlWeight:       number,
-        bpMed:              number = this._vals["bpmed"],
+        bpMed:              number = this._vals["bpmed"]?1:0,
         bpSysbpMedWeight:   number,
         bpSysbpAgeWeight:   number,
         ageSmokeWeight:     number,
@@ -732,7 +744,7 @@ export class ResultsCalcService {
         insulinWeight:      number,
         sulfonyl:           number = this._vals["sulfonyl"],
         sulfonylWeight:     number,
-        otherDiab:          number = this._vals["otherDiab"],
+        otherDiab:          number = this._vals["otherDiab"]?1:0,
         otherDiabWeight:    number,
         microAlb:           number,
         microAlbWeight:     number,
@@ -755,7 +767,7 @@ export class ResultsCalcService {
         
         if (diabetes === 1)
         {
-   \        a1cWeight = Math.log(a1c)*0.74074;
+            a1cWeight = Math.log(a1c)*0.74074;
             egfrWeight = Math.log(egfr)*-0.59522;
             insulinWeight = insulin * 0.44208;
             sulfonylWeight = sulfonyl * 0.19415;
