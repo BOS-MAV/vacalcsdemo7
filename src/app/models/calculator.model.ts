@@ -7,6 +7,7 @@ export class Calculator{
     questionGroups: QuestionGroup[];
     id: string;
     validated: boolean;
+    resultsText: string;
 
     constructor(input: any) {
         this.questionGroups = [];
