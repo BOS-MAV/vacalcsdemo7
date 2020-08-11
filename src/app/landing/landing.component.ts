@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import * as data from '../calculators-data.json';
 
 @Component({
   selector: 'app-landing',
@@ -6,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
+  public appPages = [];
+  public selectedIndex = 0;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    for (const calc of data.calculators) {
+      this.appPages.push({title: calc.name, url: 'calculator/' + calc.id });
+    }
+    this.appPages.push({title: 'About', url: 'about'});
+  }
+
+  onClick(e) {
+    this.router.navigate([e.url]);
+  }
 
 }

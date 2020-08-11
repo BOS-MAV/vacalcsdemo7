@@ -1,5 +1,6 @@
-ion-menu-button {
-    color: var(--ion-color-primary);
+  ion-button {
+    color: whitesmoke;
+    margin-bottom: 5px;
   }
   
   #container {
@@ -26,3 +27,10 @@ ion-menu-button {
   #container a {
     text-decoration: none;
   }
+
+  ion-content{
+    --ion-background-color: #bde18a;
+  }
+ion-card {
+    --ion-background-color: #ffffff;
+}

@@ -16,7 +16,7 @@ export  function numberFormat(val:number,decimalPlaces:number) :number
   return parseFloat(intRet);
 }
 
-export function calc_bmi(ht:number, wt:number, units: number) : number{
+export function calc_bmi(ht:number, wt:number, units: number): number{
 /*Function Name:    calc_bmi
  *Purpose:          calculates the BMI either using english or metric units
  *Input:            ht      - the height
@@ -73,7 +73,7 @@ export function mean_center(coeff:number[] ,cent_var: number,sex:String,race: St
 export class ResultsCalcService {
 
    /*instance variables*/
-    _results: Number[];
+    _results: number[];
     _vals: Object;
     _factor = new Map();
     _specimen = new Map();
@@ -82,15 +82,15 @@ export class ResultsCalcService {
    
 
 
-  constructor(vals:Object,calcType: String) { 
-    //load maps with json
+  constructor(vals:Object,calcType: String) {
+    // load maps with json
     /*let data = new Object();  not working yet
-    $.ajax({ 
+    $.ajax({
     url: "si-conversions.json",
-    dataType: 'json', 
-    data: data, 
-    async: false, 
-    success: function(data){ 
+    dataType: 'json',
+    data: data,
+    async: false,
+    success: function(data){
     if (data.length > 0) {
         //var arrItems = [];              // The array to store JSON data.
         $.each(data, function (index, value) {
@@ -98,22 +98,23 @@ export class ResultsCalcService {
             this._specimen.set(value.Analyte,value.Specimen);
             this._convUnit.set(value.Analyte,value.ConvUnit);
             this._SI_Unit.set(value.Analyte,value.SI_Unit);
-        });                 
+        });
         }
         }
         });*/
-   //populate instance variables
-   this._vals = vals; 
-    
-   if (calcType === "HF")  //heart failure
+   // populate instance variables
+
+   this._vals = this.handleUnits(vals);
+
+   if (calcType === 'HF')  // heart failure
       {
           this.hf_calc();
       }
-    else if (calcType === "ASCVD")  //ASCVD calc
+    else if (calcType === 'ASCVD')  // ASCVD calc
     {
         this.calc_risk_ASCVD();
     }
-    else if (calcType === "ASCVD_Diab")  //ASCVD Diabetes
+    else if (calcType === 'ASCVD_Diab')  // ASCVD Diabetes
     {
         this.calc_DiaASCVD();
     }
@@ -124,8 +125,24 @@ export class ResultsCalcService {
          return this._results;
        }
 
+    handleUnits(responses: object){
+        const cleanResponses = [];
+        for (const key in responses) {
+            if (responses.hasOwnProperty(key)){
+                const resp = responses[key];
+                if (typeof(resp) === 'string' && resp.indexOf(':') >= 0) {
+                    // do unit conversion here
+                    cleanResponses[key] = resp.substring(0, resp.indexOf(':'));
+                } else {
+                    cleanResponses[key] = resp;
+                }
+            }
+        }
+        return cleanResponses;
+    }
+
 /*heart failure method */
-   hf_calc ()
+   hf_calc()
   {
      var HFpEFCoeff: number [][],
         HFrEFCoeff: number [][];
@@ -240,7 +257,7 @@ export class ResultsCalcService {
         SBP_1 = 1/SBP;
         SBP_2 = Math.pow(SBP,-2);
      
-    if (BMI == 0)  //calculate BMI otherwise already entered in calculator
+    if (BMI == 0 || !BMI)  //calculate BMI otherwise already entered in calculator
     {
         BMI = calc_bmi(height,weight,1);
     }
@@ -362,9 +379,9 @@ export class ResultsCalcService {
         risk[1] = 1 - Math.pow(0.9941458,eXbeta[1]);
     }
     risk[0] = numberFormat(risk[0]*100,2);
-    risk[1] = numberFormat(risk[1]*100,2) 
+    risk[1] = numberFormat(risk[1]*100,2);
     this._results = risk;
-  }   
+  }
 
  /*method to calculate risk for ASCVD*/
  
@@ -432,14 +449,15 @@ export class ResultsCalcService {
     bpSysWeight = bpSys10*0.08852;
     hypertensionWeight = 0.31875 * hypertension;
     statinWeight = -0.07573 * statin;
-    xbeta = age5Weight + sexWeight + raceWeight + diabetesWeight + smokerWeight + totchl+hdlcWeight+bpSysWeight+hypertensionWeight+statinWeight;
+    xbeta = age5Weight + sexWeight + raceWeight + diabetesWeight + smokerWeight +
+        totchl + hdlcWeight + bpSysWeight + hypertensionWeight + statinWeight;
     eXbeta = Math.exp(xbeta-2.64999);
     risk[0] = 1 - Math.pow(0.99047,eXbeta);
     risk[0] = numberFormat(risk[0]*100,2);
     this._results = risk;
-    }   
+    }
     /*calc ASCVD for diabetic population */
-     calc_DiaASCVD() 
+     calc_DiaASCVD()
     {
         //declare variables
         var age:            number = this._vals["age"],
@@ -485,9 +503,9 @@ export class ResultsCalcService {
         xbeta:              number,
         eXbeta:             number,
         risk:               number[]= new Array(4);
-        ageWeight = Math.log(age)*18.9496
+        ageWeight = Math.log(age)*18.9496;
         ageLogSQWeight = Math.log(age)*Math.log(age)*-1.82065;
-        sexWeight = sexNum * -0.21382
+        sexWeight = sexNum * -0.21382;
         raceWeight = raceNum * 0.003490576;
         smokerWeight = smokerNum * 3.90106;
         totchlWeight = Math.log(totchl)*1.38594;
@@ -496,7 +514,7 @@ export class ResultsCalcService {
         ageHdlWeight = Math.log(hdlc)*Math.log(age)*-0.17799;
         bpSysbpMedWeight = Math.log(bpSys)*bpMed*0.62768;
         bpSysbpAgeWeight = Math.log(age)*Math.log(bpSys)*bpMed*-0.14554;
-        ageSmokeWeight = Math.log(age)*smokerNum*-0.92560;        
+        ageSmokeWeight = Math.log(age)*smokerNum*-0.92560;
         statinWeight = statin*-0.033734;
         if (diabetes===1)
         {
@@ -505,7 +523,7 @@ export class ResultsCalcService {
             insulinWeight = insulin * 0.28100;
             sulfonylWeight = sulfonyl * 0.10185;
             otherDiabWeight = otherDiab * -0.080862;
-            microAlbWeight = microAlb * 0.002264563;   
+            microAlbWeight = microAlb * 0.002264563;
         }
         else
         {
@@ -534,7 +552,7 @@ export class ResultsCalcService {
         ageHdlWeight = Math.log(hdlc)*Math.log(age)*0.29576;
         bpSysbpMedWeight = Math.log(bpSys)*bpMed*0.87932;
         bpSysbpAgeWeight = Math.log(age)*Math.log(bpSys)*bpMed*-0.21101;
-        ageSmokeWeight = Math.log(age)*smokerNum*-0.47557;        
+        ageSmokeWeight = Math.log(age)*smokerNum*-0.47557;
         statinWeight = 0.037998 * statin;
         if (diabetes === 1)
         {
@@ -543,7 +561,7 @@ export class ResultsCalcService {
             insulinWeight = insulin * 0.27731;
             sulfonylWeight = sulfonyl * 0.082256;
             otherDiabWeight = otherDiab * -0.059207;
-            microAlbWeight = microAlb * 0.001920131;   
+            microAlbWeight = microAlb * 0.001920131;
         }
         else
         {
@@ -559,7 +577,7 @@ export class ResultsCalcService {
                     otherDiabWeight+microAlbWeight;
         eXbeta = Math.exp(xbeta-72.9997);
         risk[1] = 1 - Math.pow(0.97855,eXbeta);
-        //calculate AIS
+        // calculate AIS
         ageWeight = Math.log(age)*25.7558;
         ageLogSQWeight = Math.log(age)*Math.log(age)*-2.67664;
         sexWeight = sexNum * -0.13267;
@@ -571,7 +589,7 @@ export class ResultsCalcService {
         ageHdlWeight = Math.log(hdlc)*Math.log(age)*-0.50053;
         bpSysbpMedWeight = Math.log(bpSys)*bpMed*0.81686;
         bpSysbpAgeWeight = Math.log(age)*Math.log(bpSys)*bpMed*-0.18904;
-        ageSmokeWeight = Math.log(age)*smokerNum*-1.01281;        
+        ageSmokeWeight = Math.log(age)*smokerNum*-1.01281;
         statinWeight = -0.053618 * statin;
         if (diabetes === 1)
         {
@@ -580,7 +598,7 @@ export class ResultsCalcService {
             insulinWeight = insulin * 0.17974;
             sulfonylWeight = sulfonyl * 0.080476;
             otherDiabWeight = otherDiab * -0.074728;
-            microAlbWeight = microAlb * 0.002229916;   
+            microAlbWeight = microAlb * 0.002229916;
         }
         else
             {
@@ -597,7 +615,7 @@ export class ResultsCalcService {
         eXbeta = Math.exp(xbeta-64.6638);
         risk[2] = 1 - Math.pow(0.98002,eXbeta);
         risk[2] = numberFormat(risk[2]*100,2);
-        //calculate death
+        // calculate death
         ageWeight = Math.log(age)*-15.5846;
         ageLogSQWeight = Math.log(age)*Math.log(age)*3.01077;
         sexWeight = sexNum * -0.31028;
@@ -609,8 +627,8 @@ export class ResultsCalcService {
         ageHdlWeight = Math.log(hdlc)*Math.log(age)*-1.44213;
         bpSysbpMedWeight = Math.log(bpSys)*bpMed*-0.13179;
         bpSysbpAgeWeight = Math.log(age)*Math.log(bpSys)*bpMed*0.0373375;
-        ageSmokeWeight = Math.log(age)*smokerNum*-0.76306;        
-        statinWeight = -0.16998 * statin;            
+        ageSmokeWeight = Math.log(age)*smokerNum*-0.76306;
+        statinWeight = -0.16998 * statin;
         if (diabetes === 1)
         {
             a1cWeight = Math.log(a1c)*0.74074;
@@ -618,7 +636,7 @@ export class ResultsCalcService {
             insulinWeight = insulin * 0.44208;
             sulfonylWeight = sulfonyl * 0.19415;
             otherDiabWeight = otherDiab * -0.13477;
-            microAlbWeight = microAlb * 0.003061906;   
+            microAlbWeight = microAlb * 0.003061906;
         }
         else
         {
@@ -636,6 +654,5 @@ export class ResultsCalcService {
         risk[3] = 1 - Math.pow(0.98686,eXbeta);
         risk[3]  = numberFormat(risk[3]*100,2);
         this._results = risk;
- }   
-}   
-    
+ }
+}

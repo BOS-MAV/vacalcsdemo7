@@ -1,6 +1,5 @@
 import { Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Question } from '../models/question.model';
-// import { FormsModule } from '@angular/forms';
 
 export abstract class QuestionInputComponent implements OnInit{
   @Input() model: Question;
@@ -15,5 +14,8 @@ export abstract class QuestionInputComponent implements OnInit{
 
   ngOnInit() {
     this.valid = true;
+    if (this.model.type === 'toggle' && !this.model.value) {
+      this.model.value = false;
+    }
   }
 }

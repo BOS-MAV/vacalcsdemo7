@@ -1,7 +1,9 @@
-<span [ngClass]="{ error: !valid }">
-    <label for="{{model.id}}">{{model.text}}</label>
-    <input id="{{model.id}}" (input)="onChange($event.target.value)" [value]="model.value" type="number" min="{model.min}" max="{model.max}" />
-    <select *ngIf="model.hasUnits" (input)="onUnitChange($event.target.value)">
-        <option *ngFor="let opt of model.unitOptions" [value]="opt['val']" selected="{{opt['val'] === model.selectedUnit}}">{{opt['text']}}</option>
-    </select>
-</span>
+<ion-item [ngClass]="{ error: !valid }">
+    <ion-label class="ion-text-wrap">{{model.text}}</ion-label>
+    <ion-input id="{{model.id}}" (input)="onChange($event.target.value)" [value]="model.value" type="number" min="{model.min}" max="{model.max}"></ion-input>
+    <ion-select *ngIf="model.hasUnits" (input)="onUnitChange($event.target.value)" value="{{model.selectedUnit}}">
+        <ion-select-option *ngFor="let opt of model.unitOptions" [value]="opt['val']" >{{opt['text']}}</ion-select-option>
+    </ion-select>
+</ion-item>
+
+<!-- selected="{{opt['val'] === model.selectedUnit}}" -->

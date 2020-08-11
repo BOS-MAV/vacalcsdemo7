@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { Calculator } from '../models/calculator.model';
 import { QuestionGroup } from '../models/question-group.model';
+import { ResultsCalcService } from '../services/results-calc.service';
+import { SharedEventService } from '../services/shared-event.service';
 import * as data from '../calculators-data.json';
 
 @Component({
@@ -15,7 +18,7 @@ export class CalculatorPage implements OnInit {
   public calculatorMode: boolean;
   public results: number[];
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute, private sharedEvents: SharedEventService, private router: Router ) { }
 
   ngOnInit() {
     this.calculatorId = this.activatedRoute.snapshot.paramMap.get('id');
@@ -23,7 +26,7 @@ export class CalculatorPage implements OnInit {
     this.calculatorMode = true;
   }
 
-  private getCalculator(){
+  private getCalculator() {
     return data.calculators.filter(i => i.id === this.calculatorId).pop();
   }
 
@@ -31,8 +34,17 @@ export class CalculatorPage implements OnInit {
     this.model.questionGroups.forEach(_ => _.questions = _.id === change.id ? change.questions : _.questions);
   }
 
-  onConfirmClick(){
+  onBackClick() {
+    this.calculatorMode = true;
+  }
+
+  onRestartClick() {
+    this.router.navigate(['calculator/' + this.calculatorId ]);
+  }
+
+  onConfirmClick() {
     if (!this.model.validate()){
+      this.sharedEvents.submitClick.next();
       return;
     }
     const responses = {};
@@ -43,9 +55,9 @@ export class CalculatorPage implements OnInit {
         }
       }
     }
-    // call service(calcName, responses)
-    this.results = [5, 10, 15];
-    this.calculatorMode = false;
+    const service = new ResultsCalcService(responses, this.model.id);
 
+    this.results = service.calc_results;
+    this.calculatorMode = false;
   }
 }

@@ -1,4 +1,7 @@
 <ion-card class="question-group-card">
+  <ion-card-header>
+    <ion-card-title>{{model.name}}</ion-card-title>
+  </ion-card-header>
   <ion-card-content>
     <div *ngFor="let question of model.questions"><app-question [model]="question" (questionValueChange)="onChange($event)"></app-question></div>
   </ion-card-content>

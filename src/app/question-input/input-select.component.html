@@ -1,6 +1,19 @@
-<span [ngClass]="{ error: !valid }">
-    <label for="{{model.id}}">{{model.text}}</label>
-    <select id="{{model.id}}" (input)="onChange($event.target.value)">
-        <option *ngFor="let opt of model.options" [value]="opt['val']">{{opt['key']}}</option>
-    </select>
-</span>
+<ion-list>
+    <ion-radio-group value="{{model.value}}" (ionChange)="onChange($event.target.value)">
+      <ion-list-header>
+        <ion-label class="ion-text-wrap" [ngClass]="{ error: !valid }">{{model.text}}</ion-label>
+      </ion-list-header>
+  
+      <ion-item *ngFor="let opt of model.options">
+        <ion-label>{{opt['text']}}</ion-label>
+        <ion-radio slot="start" [value]="opt['val']"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+<!-- <ion-item [ngClass]="{ error: !valid }">
+    <ion-label>{{model.text}}</ion-label>
+    <ion-select id="{{model.id}}" (input)="onChange($event.target.value)">
+        <ion-select-option *ngFor="let opt of model.options" [value]="opt['val']">{{opt['key']}}</ion-select-option>
+    </ion-select>
+</ion-item> -->

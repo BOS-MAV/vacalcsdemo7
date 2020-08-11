@@ -44,8 +44,7 @@ export class Question{
                     || (this.value && this.options?.some(_ => _.val && _.val === this.value));
             }
             case 'toggle': {
-                return this.valid = (!this.isRequired && !this.value)
-                    || (this.value && (this.value === true || this.value === false));
+                return this.valid = (this.value !== undefined && (this.value === true || this.value === false));
             }
             default: {
 

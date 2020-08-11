@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { QuestionInputComponent } from './question-input.component';
 import { Question } from '../models/question.model';
+import { SharedEventService } from '../services/shared-event.service';
 
 @Component({
   selector: 'app-input-toggle',
@@ -9,4 +10,9 @@ import { Question } from '../models/question.model';
 })
 export class InputToggleComponent extends QuestionInputComponent {
   @Input() public model: Question;
+
+  constructor(sharedEvents: SharedEventService) {
+    super();
+    sharedEvents.submitClick.subscribe(() => { this.valid = this.model.validate(); });
+  }
 }
