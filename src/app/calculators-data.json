@@ -666,6 +666,41 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "test",
+            "name": "test",
+            "description": "lorem ipsum test",
+            "calcFunction": "hf_calc",
+            "resultsMarkup":"<h2>Chance of this test working is {0}.</h2><p>The average chances are {1} {2} {3} {4}</p>",
+            "questionGroups": [
+                {
+                    "name": "Test",
+                    "description": "lorem ipsum history",
+                    "questions": [
+                        {
+                            "id": "test",
+                            "text": "Will it work?",
+                            "type":"select",
+                            "isRequired": true,
+                            "options": [
+                                {
+                                    "text": "Current",
+                                    "val": "Current"
+                                },
+                                {
+                                    "text": "Former",
+                                    "val": "Former"
+                                },
+                                {
+                                    "text": "Never",
+                                    "val": "Never"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -41,7 +41,8 @@ export class CalculatorPage implements OnInit {
   }
 
   onRestartClick() {
-    this.router.navigate(['calculator/' + this.calculatorId ]);
+    this.model = new Calculator(this.getCalculator());
+    this.calculatorMode = true;
   }
 
   onConfirmClick() {

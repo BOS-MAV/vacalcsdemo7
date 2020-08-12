@@ -118,7 +118,10 @@ export class ResultsCalcService {
     {
         this.calc_DiaASCVD();
     }
-
+    else if (calcType === 'test')  // ASCVD Diabetes
+    {
+        this._results = [100, 50, 4, 10000, 75];
+    }
   }
  get calc_results()
      {
@@ -131,7 +134,7 @@ export class ResultsCalcService {
             if (responses.hasOwnProperty(key)){
                 const resp = responses[key];
                 if (typeof(resp) === 'string' && resp.indexOf(':') >= 0) {
-                    // do unit conversion here
+                    // [TODO]: do unit conversion here
                     cleanResponses[key] = resp.substring(0, resp.indexOf(':'));
                 } else {
                     cleanResponses[key] = resp;

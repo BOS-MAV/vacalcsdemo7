@@ -29,7 +29,7 @@
   <div *ngIf="!calculatorMode">
     <app-calculator-results [model]="resultsModel"></app-calculator-results>
 
-    <ion-button expand="block" color="secondary" (click)="onBackClick()">Adjust answers</ion-button>
-    <ion-button expand="block" color="secondary" (click)="onRestartClick()">Start over</ion-button>
+    <ion-button expand="block" (click)="onBackClick()">Adjust answers</ion-button>
+    <ion-button expand="block" (click)="onRestartClick()">Start over</ion-button>
   </div>
 </ion-content>
