@@ -5,7 +5,7 @@
             "name": "ASCVD Risk Prediction",
             "description": "Calculates the risk of ASCVD for non-diabetic patients. Created by [WIP].",
             "calcFunction": "calc_risk_ASCVD",
-            "resultsMarkup":"<ion-header><ion-title>Your risk of heart failure is {0}</ion-title></ion-header><ion-content><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p></ion-content>",
+            "resultsMarkup":"<h1>Cardiovascular disease risk is {0}</h1><p>This represents your five-year risk. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p>",
             "questionGroups": [
                 {
                     "name": "Demographics",
@@ -201,11 +201,11 @@
             ]
         },
         {
-            "id": "DiaASCVD",
+            "id": "ASCVD_Diab",
             "name": "ASCVD Risk for Diabetic Patients",
             "description": "Calculates the risk of ASCVD for patients with diabetes. Created by [WIP].",
             "calcFunction": "calc_DiaASCVD",
-            "resultsMarkup":"<ion-title>Your risk of heart failure is {0}</ion-title><ion-content><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p></ion-content>",
+            "resultsMarkup":"<h1>Cardiovascular disease risk is {0}</h1><p>Your risk of myocardio infarction (MI) is {1}</p><p>Your risk of arterial ischemic stroke (AIS) is {2}</p><p>Your risk of death is {3}</p><p>This represents your five-year risk. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p>",
             "questionGroups": [
                 {
                     "name": "Demographics",
@@ -450,7 +450,7 @@
                             "description": "",
                             "type": "number",
                             "min": 0,
-                            "max": 1000,
+                            "max": 100,
                             "hasUnits": true,
                             "isRequired": true,
                             "selectedUnit": "%",
@@ -470,7 +470,7 @@
             "name": "Heart Failure Risk",
             "description": "lorem ipsum risk of heart failure",
             "calcFunction": "hf_calc",
-            "resultsMarkup":"<h2>Your risk of heart failure is {0}.</h2><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p>",
+            "resultsMarkup":"<h1>Your risk of heart failure is {0}.</h1><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p>",
             "questionGroups": [
                 {
                     "name": "Demographics",
