@@ -1,10 +1,11 @@
 {
     "calculators": [
         {
-            "id": "DiaASCVD",
-            "name": "ASCVD Risk for Diabetic Patients",
-            "description": "Calculates the risk of ASCVD for patients with diabetes. Created by [WIP].",
-            "calcFunction": "calc_DiaASCVD",
+            "id": "ASCVD",
+            "name": "ASCVD Risk Prediction",
+            "description": "Calculates the risk of ASCVD for non-diabetic patients. Created by [WIP].",
+            "calcFunction": "calc_risk_ASCVD",
+            "resultsMarkup":"<ion-header><ion-title>Your risk of heart failure is {0}</ion-title></ion-header><ion-content><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p></ion-content>",
             "questionGroups": [
                 {
                     "name": "Demographics",
@@ -63,13 +64,212 @@
                             "id": "diabetes",
                             "text": "Do you have a history of diabetes?",
                             "type": "toggle",
+                            "isRequired": true
+                        },
+                        {
+                            "id": "smoker",
+                            "text": "Do you currently smoke?",
+                            "type":"toggle",
+                            "isRequired": true
+                        },
+                        {
+                            "id": "hypertension",
+                            "text": "Are you currently on hypertension treatment?",
+                            "description": "Are you currently on hypertension treatment?",
+                            "type": "toggle",
+                            "isRequired": true
+                        },
+                        {
+                            "id": "statin",
+                            "text": "Do you currently take a statin medication?",
+                            "description": "Do you currently take a statin medication?",
+                            "type": "toggle",
+                            "isRequired": true
+                        }
+                    ]
+                },
+                {   "name": "Blood Pressure and Labs",
+                    "description": "Blood Pressure and Labs",
+                    "questions": [
+                        {
+                            "id": "SBP",
+                            "text": "Systolic blood pressure",
+                            "description": "lorem ipsum",
+                            "type": "number",
+                            "min": 0,
+                            "max": 300,
                             "isRequired": true,
-                            "value": true
+                            "hasUnits": true,
+                            "unitOptions": [
+                                {
+                                    "text": "mm Hg",
+                                    "val": "mm Hg"
+                                },
+                                {
+                                    "text": "kPa",
+                                    "val": "kPa"
+                                }
+                            ],
+                            "selectedUnit": "mm Hg"
+                        },
+                        {
+                            "id": "DBP",
+                            "text": "Diastolic blood pressure",
+                            "description": "lorem ipsum",
+                            "type": "number",
+                            "min": 0,
+                            "max": 300,
+                            "isRequired": true,
+                            "hasUnits": true,
+                            "unitOptions": [
+                                {
+                                    "text": "mm Hg",
+                                    "val": "mm Hg"
+                                },
+                                {
+                                    "text": "kPa",
+                                    "val": "kPa"
+                                }
+                            ],
+                            "selectedUnit": "mm Hg"
+                        },
+                        {
+                            "id": "totchl",
+                            "text": "Total Cholesterol",
+                            "description": "Please enter total cholesterol level",
+                            "type": "number",
+                            "min": 1,
+                            "max": 500,
+                            "hasUnits": true,
+                            "isRequired": true,
+                            "unitOptions": [                                
+                                {
+                                    "text": "mg/dL",
+                                    "val": "mg/dL"
+                                },
+                                {
+                                    "text": "µmol/L",
+                                    "val": "µmol/L"
+                                }
+                            ],
+                            "selectedUnit": "mg/dL"
+                        },
+                        {
+                            "id": "hdl",
+                            "text": "HDL Cholesterol",
+                            "description": "Please enter HDL cholesterol level",
+                            "type": "number",
+                            "min": 1,
+                            "max": 150,
+                            "hasUnits": true,
+                            "isRequired": true,
+                            "unitOptions": [                                
+                                {
+                                    "text": "mg/dL",
+                                    "val": "mg/dL"
+                                },
+                                {
+                                    "text": "µmol/L",
+                                    "val": "µmol/L"
+                                }
+                            ],
+                            "selectedUnit": "mg/dL"
+                        },
+                        {
+                            "id": "ldl",
+                            "text": "LDL Cholesterol",
+                            "description": "Please enter LDL cholesterol level",
+                            "type": "number",
+                            "min": 1,
+                            "max": 400,
+                            "hasUnits": true,
+                            "isRequired": true,
+                            "unitOptions": [                                
+                                {
+                                    "text": "mg/dL",
+                                    "val": "mg/dL"
+                                },
+                                {
+                                    "text": "µmol/L",
+                                    "val": "µmol/L"
+                                }
+                            ],
+                            "selectedUnit": "mg/dL"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "DiaASCVD",
+            "name": "ASCVD Risk for Diabetic Patients",
+            "description": "Calculates the risk of ASCVD for patients with diabetes. Created by [WIP].",
+            "calcFunction": "calc_DiaASCVD",
+            "resultsMarkup":"<ion-title>Your risk of heart failure is {0}</ion-title><ion-content><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p></ion-content>",
+            "questionGroups": [
+                {
+                    "name": "Demographics",
+                    "description": "lorem ipsum",
+                    "questions": [
+                        {
+                            "id": "age",
+                            "text": "Current Age (20-79)",
+                            "description": "Please enter an age between 20 and 79",
+                            "type": "number",
+                            "min": 20,
+                            "max": 79,
+                            "isRequired": true
+                        },
+                        {
+                            "id": "sex",
+                            "text": "Sex",
+                            "description": "Please choose either male or female",
+                            "type": "select",
+                            "isRequired": true,
+                            "options": [
+                                {
+                                    "text": "Male",
+                                    "val": "Male"
+                                },
+                                {
+                                    "text": "Female",
+                                    "val": "Female"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "race",
+                            "text": "Race",
+                            "description": "Please choose White or African American",
+                            "type": "select",
+                            "isRequired": true,
+                            "options": [
+                                {
+                                    "text": "White",
+                                    "val": "White"
+                                },
+                                {
+                                    "text": "African American",
+                                    "val": "African American"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Medical History",
+                    "description": "lorem ipsum history",
+                    "questions": [
+                        {
+                            "id": "diabetes",
+                            "text": "Do you have a history of diabetes?",
+                            "type": "toggle",
+                            "isRequired": true
                         },
                         {
                             "id": "smoker",
                             "text": "Have you ever smoked?",
-                            "type":"Toggle",
+                            "type":"toggle",
                             "isRequired": true
                         },
                         {
@@ -202,6 +402,7 @@
                             "description": "Please enter LDL cholesterol level",
                             "type": "number",
                             "min": 0,
+                            "max": 1000,
                             "isRequired": true
                         },
                         {
@@ -252,213 +453,14 @@
                             "max": 1000,
                             "hasUnits": true,
                             "isRequired": true,
-                            "selectedUnit": "mmol/mol",
+                            "selectedUnit": "%",
                             "unitOptions": [                                
                                 {
-                                    "text": "mmol/mol",
-                                    "val": "mmol/mol"
+                                    "text": "%",
+                                    "val": "%"
                                 }
                             ]
                         }                           
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "ASCVD",
-            "name": "ASCVD Risk Prediction",
-            "description": "Calculates the risk of ASCVD for non-diabetic patients. Created by [WIP].",
-            "calcFunction": "calc_risk_ASCVD",
-            "questionGroups": [
-                {
-                    "name": "Demographics",
-                    "description": "lorem ipsum",
-                    "questions": [
-                        {
-                            "id": "age",
-                            "text": "Current Age (20-79)",
-                            "description": "Please enter an age between 20 and 79",
-                            "type": "number",
-                            "min": 20,
-                            "max": 79,
-                            "isRequired": true
-                        },
-                        {
-                            "id": "sex",
-                            "text": "Sex",
-                            "description": "Please choose either male or female",
-                            "type": "select",
-                            "isRequired": true,
-                            "options": [
-                                {
-                                    "text": "Male",
-                                    "val": "Male"
-                                },
-                                {
-                                    "text": "Female",
-                                    "val": "Female"
-                                }
-                            ]
-                        },
-                        {
-                            "id": "race",
-                            "text": "Race",
-                            "description": "Please choose White or African American",
-                            "type": "select",
-                            "isRequired": true,
-                            "options": [
-                                {
-                                    "text": "White",
-                                    "val": "White"
-                                },
-                                {
-                                    "text": "African American",
-                                    "val": "African American"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Medical History",
-                    "description": "lorem ipsum history",
-                    "questions": [
-                        {
-                            "id": "diabetes",
-                            "text": "Do you have a history of diabetes?",
-                            "type": "toggle",
-                            "isRequired": true
-                        },
-                        {
-                            "id": "smoker",
-                            "text": "Do you currently smoke?",
-                            "type":"Toggle",
-                            "isRequired": true
-                        },
-                        {
-                            "id": "hypertension",
-                            "text": "Are you currently on hypertension treatment?",
-                            "description": "Are you currently on hypertension treatment?",
-                            "type": "toggle",
-                            "isRequired": true
-                        },
-                        {
-                            "id": "statin",
-                            "text": "Do you currently take a statin medication?",
-                            "description": "Do you currently take a statin medication?",
-                            "type": "toggle",
-                            "isRequired": true
-                        }
-                    ]
-                },
-                {   "name": "Blood Pressure and Labs",
-                    "description": "Blood Pressure and Labs",
-                    "questions": [
-                        {
-                            "id": "SBP",
-                            "text": "Systolic blood pressure",
-                            "description": "lorem ipsum",
-                            "type": "number",
-                            "min": 0,
-                            "max": 300,
-                            "isRequired": true,
-                            "hasUnits": true,
-                            "unitOptions": [
-                                {
-                                    "text": "mm Hg",
-                                    "val": "mm Hg"
-                                },
-                                {
-                                    "text": "kPa",
-                                    "val": "kPa"
-                                }
-                            ],
-                            "selectedUnit": "mm Hg"
-                        },
-                        {
-                            "id": "DBP",
-                            "text": "Diastolic blood pressure",
-                            "description": "lorem ipsum",
-                            "type": "number",
-                            "min": 0,
-                            "max": 300,
-                            "isRequired": true,
-                            "hasUnits": true,
-                            "unitOptions": [
-                                {
-                                    "text": "mm Hg",
-                                    "val": "mm Hg"
-                                },
-                                {
-                                    "text": "kPa",
-                                    "val": "kPa"
-                                }
-                            ],
-                            "selectedUnit": "mm Hg"
-                        },
-                        {
-                            "id": "totchl",
-                            "text": "Total Cholesterol",
-                            "description": "Please enter total cholesterol level",
-                            "type": "number",
-                            "min": 1,
-                            "max": 500,
-                            "hasUnits": true,
-                            "isRequired": true,
-                            "unitOptions": [                                
-                                {
-                                    "text": "mg/dL",
-                                    "val": "mg/dL"
-                                },
-                                {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
-                                }
-                            ],
-                            "selectedUnit": "mg/dL"
-                        },
-                        {
-                            "id": "hdl",
-                            "text": "HDL Cholesterol",
-                            "description": "Please enter HDL cholesterol level",
-                            "type": "number",
-                            "min": 1,
-                            "max": 150,
-                            "hasUnits": true,
-                            "isRequired": true,
-                            "unitOptions": [                                
-                                {
-                                    "text": "mg/dL",
-                                    "val": "mg/dL"
-                                },
-                                {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
-                                }
-                            ],
-                            "selectedUnit": "mg/dL"
-                        },
-                        {
-                            "id": "ldl",
-                            "text": "LDL Cholesterol",
-                            "description": "Please enter LDL cholesterol level",
-                            "type": "number",
-                            "min": 1,
-                            "max": 400,
-                            "hasUnits": true,
-                            "isRequired": true,
-                            "unitOptions": [                                
-                                {
-                                    "text": "mg/dL",
-                                    "val": "mg/dL"
-                                },
-                                {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
-                                }
-                            ],
-                            "selectedUnit": "mg/dL"
-                        }
                     ]
                 }
             ]
@@ -468,6 +470,7 @@
             "name": "Heart Failure Risk",
             "description": "lorem ipsum risk of heart failure",
             "calcFunction": "hf_calc",
+            "resultsMarkup":"<h2>Your risk of heart failure is {0}.</h2><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p>",
             "questionGroups": [
                 {
                     "name": "Demographics",

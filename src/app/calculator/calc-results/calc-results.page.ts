@@ -19,6 +19,7 @@ export class CalculatorResultsPage implements OnInit{
   stringReplacement() {
     // TODO [MM]: the innerHTML replacement isn't working yet, but this was good enough to commit and get it off my machine
     let builtString = this.model.markup || '<p>test 0:{0} 1:{1} 2:{2}</p>';
+    this.model.results = this.model.results || [];
     for (let i = 0; i < this.model.results.length; i++) {
       builtString = builtString.replace('{' + i + '}', this.model.results[i].toString());
     }
