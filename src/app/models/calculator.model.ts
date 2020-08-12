@@ -7,7 +7,7 @@ export class Calculator{
     questionGroups: QuestionGroup[];
     id: string;
     validated: boolean;
-    resultsText: string;
+    resultsMarkup: string;
 
     constructor(input: any) {
         this.questionGroups = [];
@@ -15,6 +15,7 @@ export class Calculator{
         this.description = input.description;
         this.calcFunction = input.calcFunction;
         this.id = input.id;
+        this.resultsMarkup = input.resultsMarkup;
         if (input.questionGroups) {
             for (let i = 0; i < input.questionGroups.length; i++){
                 const q = input.questionGroups[i];
@@ -27,4 +28,9 @@ export class Calculator{
     validate(): boolean {
         return !this.questionGroups.some(_ => !_.validate());
     }
+}
+
+export class CalculatorResults {
+    markup: string;
+    results: number[];
 }

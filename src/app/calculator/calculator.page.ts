@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
-import { Calculator } from '../models/calculator.model';
+import { Calculator, CalculatorResults } from '../models/calculator.model';
 import { QuestionGroup } from '../models/question-group.model';
 import { ResultsCalcService } from '../services/results-calc.service';
 import { SharedEventService } from '../services/shared-event.service';
@@ -16,7 +16,7 @@ export class CalculatorPage implements OnInit {
   public calculatorId: string;
   public model: Calculator;
   public calculatorMode: boolean;
-  public results: number[];
+  public resultsModel: CalculatorResults;
 
   constructor(private activatedRoute: ActivatedRoute, private sharedEvents: SharedEventService, private router: Router ) { }
 
@@ -24,6 +24,8 @@ export class CalculatorPage implements OnInit {
     this.calculatorId = this.activatedRoute.snapshot.paramMap.get('id');
     this.model = new Calculator(this.getCalculator());
     this.calculatorMode = true;
+    this.resultsModel = new CalculatorResults();
+    this.resultsModel.markup = this.model.resultsMarkup;
   }
 
   private getCalculator() {
@@ -57,7 +59,7 @@ export class CalculatorPage implements OnInit {
     }
     const service = new ResultsCalcService(responses, this.model.id);
 
-    this.results = service.calc_results;
+    this.resultsModel.results = service.calc_results;
     this.calculatorMode = false;
   }
 }

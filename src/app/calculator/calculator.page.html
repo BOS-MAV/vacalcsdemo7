@@ -27,7 +27,7 @@
   
   </div>
   <div *ngIf="!calculatorMode">
-    <app-calculator-results [results]="results"></app-calculator-results>
+    <app-calculator-results [model]="resultsModel"></app-calculator-results>
 
     <ion-button expand="block" color="secondary" (click)="onBackClick()">Adjust answers</ion-button>
     <ion-button expand="block" color="secondary" (click)="onRestartClick()">Start over</ion-button>
