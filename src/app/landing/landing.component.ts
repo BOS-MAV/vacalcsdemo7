@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import * as data from '../calculators-data.json';
 
@@ -10,6 +10,7 @@ import * as data from '../calculators-data.json';
 export class LandingComponent implements OnInit {
   public appPages = [];
   public selectedIndex = 0;
+  @Output() menuItemChange = new EventEmitter();
 
   constructor(private router: Router) { }
 
@@ -20,8 +21,8 @@ export class LandingComponent implements OnInit {
     this.appPages.push({title: 'About', url: 'about'});
   }
 
-  onClick(e) {
+  onClick(e, i) {
     this.router.navigate([e.url]);
+    this.menuItemChange.emit(i);
   }
-
 }

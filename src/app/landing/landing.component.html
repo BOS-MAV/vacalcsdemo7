@@ -14,7 +14,7 @@
     </ion-card-header>
     <ion-card-content>
       <p>These calculators are developed by [WIP] in collaboration with [WIP]. Please select one to get started. This copy not final</p>
-      <ion-button expand="block" fill="clear" size="large" (click)="onClick(p)" *ngFor="let p of appPages; let i = index">{{p.title}}</ion-button>
+      <ion-button expand="block" fill="clear" size="large" (click)="onClick(p, i)" *ngFor="let p of appPages; let i = index">{{p.title}}</ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>

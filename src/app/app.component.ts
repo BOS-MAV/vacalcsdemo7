@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { LandingComponent } from './landing/landing.component';
+import { Subscription } from 'rxjs';
 import * as data from './calculators-data.json';
 
 @Component({
@@ -13,8 +14,7 @@ import * as data from './calculators-data.json';
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [];
-  // public calculators: Calculator[];
-  // public calculator: Calculator;
+  private menuChange: Subscription;
 
   constructor(
     private platform: Platform,
@@ -37,5 +37,17 @@ export class AppComponent implements OnInit {
       this.appPages.push({title: calc.name, url: 'calculator/' + calc.id });
     }
     this.appPages.push({title: 'About', url: 'about'});
+  }
+
+  onActivate(component) {
+    if (component instanceof LandingComponent) {
+        this.menuChange = component.menuItemChange.subscribe(_ => this.selectedIndex = _);
+    }
+  }
+
+  onDeactivate() {
+    if (this.menuChange) {
+        this.menuChange.unsubscribe();
+    }
   }
 }
