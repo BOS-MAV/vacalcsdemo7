@@ -434,12 +434,12 @@
                             "isRequired": true,
                             "unitOptions": [                                
                                 {
-                                    "text": "mg/dL",
-                                    "val": "mg/dL"
+                                    "text": "mg/g creat",
+                                    "val": "mg/g creat"
                                 },
                                 {
-                                    "text": "mg/L",
-                                    "val": "mg/L"
+                                    "text": "mg/g creat",
+                                    "val": "mg/g creat"
                                 }
                             ],
                             "selectedUnit": "mg/dL"
