@@ -148,8 +148,8 @@
                                     "val": "mg/dL"
                                 },
                                 {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
+                                    "text": "mmol/L",
+                                    "val": "mmol/L"
                                 }
                             ],
                             "selectedUnit": "mg/dL"
@@ -169,8 +169,8 @@
                                     "val": "mg/dL"
                                 },
                                 {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
+                                    "text": "mmol/L",
+                                    "val": "mmol/L"
                                 }
                             ],
                             "selectedUnit": "mg/dL"
@@ -190,8 +190,8 @@
                                     "val": "mg/dL"
                                 },
                                 {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
+                                    "text": "mmol/L",
+                                    "val": "mmol/L"
                                 }
                             ],
                             "selectedUnit": "mg/dL"
@@ -348,8 +348,8 @@
                                     "val": "mg/dL"
                                 },
                                 {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
+                                    "text": "mmol/L",
+                                    "val": "mmol/L"
                                 }
                             ],
                             "selectedUnit": "mg/dL"
@@ -369,8 +369,8 @@
                                     "val": "mg/dL"
                                 },
                                 {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
+                                    "text": "mmol/L",
+                                    "val": "mmol/L"
                                 }
                             ],
                             "selectedUnit": "mg/dL"
@@ -390,8 +390,8 @@
                                     "val": "mg/dL"
                                 },
                                 {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
+                                    "text": "mmol/L",
+                                    "val": "mmol/L"
                                 }
                             ],
                             "selectedUnit": "mg/dL"
@@ -438,8 +438,8 @@
                                     "val": "mg/dL"
                                 },
                                 {
-                                    "text": "µmol/L",
-                                    "val": "µmol/L"
+                                    "text": "mg/L",
+                                    "val": "mg/L"
                                 }
                             ],
                             "selectedUnit": "mg/dL"

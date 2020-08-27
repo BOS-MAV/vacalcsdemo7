@@ -453,8 +453,8 @@ export class ResultsCalcService {
     statinWeight = -0.07573 * statin;
     xbeta = age5Weight + sexWeight + raceWeight + diabetesWeight + smokerWeight +
         totchl + hdlcWeight + bpSysWeight + hypertensionWeight + statinWeight;
-    eXbeta = Math.exp(xbeta-2.64999);
-    risk[0] = 1 - Math.pow(0.99047,eXbeta);
+    eXbeta = Math.exp(xbeta-2.93853);
+    risk[0] = 1 - Math.pow(0.98731,eXbeta);
     risk[0] = numberFormat(risk[0]*100,2);
     this._results = risk;
     }
@@ -466,10 +466,10 @@ export class ResultsCalcService {
         ageWeight:          number,
         ageLogSQWeight:     number,
         sex:                String = this._vals["sex"],
-        sexNum:             number = sex==="Male"?1:0,
+        sexNum:             number = sex==="Male"?0:1,
         sexWeight:          number,
         race:               String = this._vals["race"],
-        raceNum:            number = race==="White"?1:0,
+        raceNum:            number = race==="White"?0:1,
         raceWeight:         number,
         smokerNum:          number = this._vals["smoker"]?1:0,
         smokerWeight:       number,
@@ -505,6 +505,7 @@ export class ResultsCalcService {
         eXbeta:             number,
         risk:               number[]= new Array(4);
         ageWeight = Math.log(age)*18.9496;
+        console.log("x");
         ageLogSQWeight = Math.log(age)*Math.log(age)*-1.82065;
         sexWeight = sexNum * -0.21382;
         raceWeight = raceNum * 0.003490576;
@@ -519,7 +520,7 @@ export class ResultsCalcService {
         statinWeight = statin*-0.033734;
         if (diabetes===1)
         {
-            a1cWeight = Math.log(a1c)*0.92618;
+            a1cWeight = Math.log(a1c/100)*0.92618;
             egfrWeight = Math.log(egfr)*-0.35818;
             insulinWeight = insulin * 0.28100;
             sulfonylWeight = sulfonyl * 0.10185;
@@ -557,7 +558,7 @@ export class ResultsCalcService {
         statinWeight = 0.037998 * statin;
         if (diabetes === 1)
         {
-            a1cWeight = Math.log(a1c)*0.86555;
+            a1cWeight = Math.log(a1c/100)*0.86555;
             egfrWeight = Math.log(egfr)*-0.43044;
             insulinWeight = insulin * 0.27731;
             sulfonylWeight = sulfonyl * 0.082256;
@@ -578,6 +579,7 @@ export class ResultsCalcService {
                     otherDiabWeight+microAlbWeight;
         eXbeta = Math.exp(xbeta-72.9997);
         risk[1] = 1 - Math.pow(0.97855,eXbeta);
+        risk[1] = numberFormat(risk[1]*100,2);
         // calculate AIS
         ageWeight = Math.log(age)*25.7558;
         ageLogSQWeight = Math.log(age)*Math.log(age)*-2.67664;
@@ -594,7 +596,7 @@ export class ResultsCalcService {
         statinWeight = -0.053618 * statin;
         if (diabetes === 1)
         {
-            a1cWeight = Math.log(a1c)*1.08183;
+            a1cWeight = Math.log(a1c/100)*1.08183;
             egfrWeight = Math.log(egfr)*-0.16523;
             insulinWeight = insulin * 0.17974;
             sulfonylWeight = sulfonyl * 0.080476;
@@ -632,7 +634,7 @@ export class ResultsCalcService {
         statinWeight = -0.16998 * statin;
         if (diabetes === 1)
         {
-            a1cWeight = Math.log(a1c)*0.74074;
+            a1cWeight = Math.log(a1c/100)*0.74074;
             egfrWeight = Math.log(egfr)*-0.59522;
             insulinWeight = insulin * 0.44208;
             sulfonylWeight = sulfonyl * 0.19415;
