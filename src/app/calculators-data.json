@@ -62,26 +62,26 @@
                     "questions": [
                         {
                             "id": "diabetes",
-                            "text": "Do you have a history of diabetes?",
+                            "text": "Diabetic",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "smoker",
-                            "text": "Do you currently smoke?",
+                            "text": "Current Smoker",
                             "type":"toggle",
                             "isRequired": true
                         },
                         {
                             "id": "hypertension",
-                            "text": "Are you currently on hypertension treatment?",
+                            "text": "Hypertension Treatment?",
                             "description": "Are you currently on hypertension treatment?",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "statin",
-                            "text": "Do you currently take a statin medication?",
+                            "text": "Taking Statins?",
                             "description": "Do you currently take a statin medication?",
                             "type": "toggle",
                             "isRequired": true
@@ -262,26 +262,26 @@
                     "questions": [
                         {
                             "id": "diabetes",
-                            "text": "Do you have a history of diabetes?",
+                            "text": "Diabetic",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "smoker",
-                            "text": "Have you ever smoked?",
+                            "text": "Ever smoked?",
                             "type":"toggle",
                             "isRequired": true
                         },
                         {
                             "id": "hypertension",
-                            "text": "Are you currently on hypertension treatment?",
+                            "text": "Hypertension Treatment?",
                             "description": "Are you currently on hypertension treatment?",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "statin",
-                            "text": "Do you currently take a statin medication?",
+                            "text": "Statins?",
                             "description": "Do you currently take a statin medication?",
                             "type": "toggle",
                             "isRequired": true
@@ -407,19 +407,19 @@
                         },
                         {
                             "id": "insulin",
-                            "text": "Do you currently take insulin?",
+                            "text": "Taking Insulin?",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "otherDiab",
-                            "text": "Do you currently take other non-insulin diabetic oral medications?",
+                            "text": "Taking non-insulin diabetic oral medications?",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "sulfonyl",
-                            "text": "Do you currently take sulfonylurea?",
+                            "text": "Taking sulfonylurea?",
                             "type": "toggle",
                             "isRequired": true
                         },
@@ -587,34 +587,34 @@
                         },
                         {
                             "id": "diabetes",
-                            "text": "Do you have a history of diabetes?",
+                            "text": "Diabetic?",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "hypertension",
-                            "text": "Are you currently on hypertension treatment?",
+                            "text": "On hypertension treatment?",
                             "description": "Are you currently on hypertension treatment?",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "pCAD",
-                            "text": "Do you have a history of coronary artery disease?",
+                            "text": "History of coronary artery disease?",
                             "description": "Do you have a history of coronary artery disease?",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "aFib",
-                            "text": "Have you been diagnosed with atrial fibrillation?",
+                            "text": "Diagnosed with atrial fibrillation?",
                             "description": "Have you been diagnosed with atrial fibrillation?",
                             "type": "toggle",
                             "isRequired": true
                         },
                         {
                             "id": "COPD",
-                            "text": "Do you have a history of chronic obstructive pulmonary disease?",
+                            "text": "COPD?",
                             "description": "Do you have a history of chronic obstructive pulmonary disease?",
                             "type": "toggle",
                             "min": 0,
