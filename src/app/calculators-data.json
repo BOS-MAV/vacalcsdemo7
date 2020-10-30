@@ -470,7 +470,7 @@
             "name": "Heart Failure Risk",
             "description": "lorem ipsum risk of heart failure",
             "calcFunction": "hf_calc",
-            "resultsMarkup":"<h1>Your risk of heart failure is {0}.</h1><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p>",
+            "resultsMarkup":"<h1>Your risk of heart failure is val 1: {0}, val 2: {1}.</h1><p>The average risk of heart failure is [WIP]. Try adjusting your responses to see how lifestyle changes might affect this number. Ask your doctor for more help understanding these results</p>",
             "questionGroups": [
                 {
                     "name": "Demographics",
@@ -619,6 +619,13 @@
                             "type": "toggle",
                             "min": 0,
                             "max": 300,
+                            "isRequired": true
+                        },
+                        {
+                            "id": "pMI",
+                            "text": "MI?",
+                            "description": "Do you have a history of myocardial infarction?",
+                            "type": "toggle",
                             "isRequired": true
                         },
                         {
