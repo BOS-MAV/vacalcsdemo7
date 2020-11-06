@@ -1,0 +1,2739 @@
+[
+    {
+      "Analyte": "Acetaminophen",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 6.614,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Acetoacetate",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 97.95,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Acetone",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.172,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Acid phosphatase",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 16.667,
+      "SI_Unit": "nkat/L"
+    },
+    {
+      "Analyte": "Activated partial thromboplastin time (APTT)",
+      "Specimen": "Whole blood",
+      "ConvUnit": "s",
+      "Factor": 1,
+      "SI_Unit": "s"
+    },
+    {
+      "Analyte": "Adenosine deaminase",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 16.667,
+      "SI_Unit": "nkat/L"
+    },
+    {
+      "Analyte": "Adrenocorticotropic hormone (ACTH)",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.22,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Alanine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 112.2,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Alanine aminotransferase (ALT)",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "Albumin",
+      "Specimen": "Serum",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Alcohol dehydrogenase",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 16.667,
+      "SI_Unit": "nkat/L"
+    },
+    {
+      "Analyte": "Aldolase",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "Aldosterone",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/dL",
+      "Factor": 27.74,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Alkaline phosphatase",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "Alprazolam",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.24,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Amikacin",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 1.708,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "α-Aminobutyric acid",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 96.97,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "δ-Aminolevulinic acid",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.0763,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Amiodarone",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 1.55,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Amitriptyline",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.605,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Ammonia (as nitrogen)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.714,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Amobarbital",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.42,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Amphetamine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 7.4,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Amylase",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "Androstenedione",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/dL",
+      "Factor": 0.0349,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Angiotensin I",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.772,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Angiotensin II",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.957,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Angiotensin-converting enzyme",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 16.667,
+      "SI_Unit": "nkat/L"
+    },
+    {
+      "Analyte": "Anion gap Na+–(Cl- + HCO3-)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mEq/L",
+      "Factor": 1,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Antidiuretic hormone (ADH)",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.923,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Antithrombin III",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "α1-Antitrypsin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.184,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Apolipoprotein A-I",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Apolipoprotein B",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Arginine",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 57.4,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Arsenic",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/L",
+      "Factor": 0.0133,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Ascorbic Acid",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dl",
+      "Factor": 56.78,
+      "SI_Unit": "umol/L"
+    },
+    {
+      "Analyte": "Asparagine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 75.689,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Aspartate aminotransferase (AST)",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "Aspartic acid",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 75.13,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Atrial natriuretic hormone",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 1,
+      "SI_Unit": "ng/L"
+    },
+    {
+      "Analyte": "Bands",
+      "Specimen": "Whole \nBlood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Base excess",
+      "Specimen": "Whole blood",
+      "ConvUnit": "mEq/L",
+      "Factor": 1,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Basophils ",
+      "Specimen": "Whole \nBlood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Bicarbonate",
+      "Specimen": "Serum",
+      "ConvUnit": "mEq/L",
+      "Factor": 1,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Bile acids (total)",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.448,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Bilirubin, direct (conjugated)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 17.104,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Bilirubin, total",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 17.104,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Biotin",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.00409,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Bismuth",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/L",
+      "Factor": 4.785,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Blood gases",
+      "Specimen": "",
+      "ConvUnit": "",
+      "Factor": null,
+      "SI_Unit": ""
+    },
+    {
+      "Analyte": "Carbon dioxide, Pco2",
+      "Specimen": "Arterial blood",
+      "ConvUnit": "mm Hg",
+      "Factor": 0.133,
+      "SI_Unit": "kPa"
+    },
+    {
+      "Analyte": "pH",
+      "Specimen": "Arterial blood",
+      "ConvUnit": "",
+      "Factor": 1,
+      "SI_Unit": ""
+    },
+    {
+      "Analyte": "Oxygen, Po2",
+      "Specimen": "Arterial blood",
+      "ConvUnit": "mm Hg",
+      "Factor": 0.133,
+      "SI_Unit": "kPa"
+    },
+    {
+      "Analyte": "Brain-type natriuretic peptide (BNP)",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 1,
+      "SI_Unit": "ng/L"
+    },
+    {
+      "Analyte": "Bromide (toxic)",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 0.0125,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "C1 esterase inhibitor",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "C3 complement",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "C4 complement",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Cadmium",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/L",
+      "Factor": 8.896,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Caffeine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 5.15,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Calcitonin",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.292,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Calcium, ionized",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.25,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Calcium, total",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.25,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Cancer antigen (CA) 125",
+      "Specimen": "Serum",
+      "ConvUnit": "U/mL",
+      "Factor": 1,
+      "SI_Unit": "kU/L"
+    },
+    {
+      "Analyte": "Carbamazepine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.233,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Carbon dioxide (total)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mEq/L",
+      "Factor": 1,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Carboxyhemoglobin, toxic",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Carcinoembryonic antigen (CEA)",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "β-Carotene",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.01863,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Carotenoids",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.01863,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Ceruloplasmin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Chloramphenicol",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.095,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Chlordiazepoxide",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.336,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Chloride",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mEq/L",
+      "Factor": 1,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Chlorpromazine",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.136,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Chlorpropamide",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/L",
+      "Factor": 3.61,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Cholecalciferol ",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/mL",
+      "Factor": 2.4,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Total Cholesterol",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.0259,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Cholesterol, high-density (HDL)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.0259,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Cholesterol, low-density (LDL)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.0259,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Cholinesterase",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 1,
+      "SI_Unit": "kU/L"
+    },
+    {
+      "Analyte": "Chorionic gonadotropin (ß-hCG) (nonpregnant)",
+      "Specimen": "Serum",
+      "ConvUnit": "mIU/mL",
+      "Factor": 1,
+      "SI_Unit": "IU/L"
+    },
+    {
+      "Analyte": "Chromium",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/L",
+      "Factor": 19.232,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Citrate",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 52.05,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Citrulline",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 57.081,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Clonazepam",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.167,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Clonidine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 4.35,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Clozapine",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.003,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Coagulation factor I",
+      "Specimen": "Plasma",
+      "ConvUnit": "g/dL",
+      "Factor": 29.41,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "(Fibrinogen)",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Coagulation factor II (prothrombin)",
+      "Specimen": "Plasma",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Coagulation factor V",
+      "Specimen": "Plasma",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Coagulation factor VII",
+      "Specimen": "Plasma",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Coagulation factor VIII",
+      "Specimen": "Plasma",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Coagulation factor IX",
+      "Specimen": "Plasma",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Coagulation factor X",
+      "Specimen": "Plasma",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Coagulation factor XI",
+      "Specimen": "Plasma",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Coagulation factor XII",
+      "Specimen": "Plasma",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Cobalt",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/L",
+      "Factor": 16.968,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Cocaine (toxic)",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.297,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Codeine",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.34,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Coenzyme Q10 (ubiquinone)",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 1,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Copper",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.157,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Coproporphyrin",
+      "Specimen": "Urine",
+      "ConvUnit": "µg/24 h",
+      "Factor": 1.527,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Corticotropin",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.22,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Cortisol",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/dL",
+      "Factor": 27.588,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Cotinine",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/L",
+      "Factor": 5.675,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "C-peptide",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.331,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "C-reactive protein",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Creatine",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 76.25,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Creatine kinase (CK)",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "Creatine kinase–MB fraction",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Creatinine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 88.4,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Creatinine clearance",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mL/min/1.73 m2",
+      "Factor": 0.0167,
+      "SI_Unit": "mL/s/m2"
+    },
+    {
+      "Analyte": "Cyanide (toxic)",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/mL",
+      "Factor": 38.4,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Cyclic adenosine monophosphate (cAMP)",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.04,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Cyclosporine",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.832,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Cystine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 41.615,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "D-dimer",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 5.476,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Dehydroepiandrosterone (DHEA)",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.47,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Dehydroepiandrosterone sulfate (DHEA-S)",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.027,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Deoxycorticosterone",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/dL",
+      "Factor": 0.0303,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Desipramine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.754,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Diazepam",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.0035,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Digoxin",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 1.281,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Diltiazem",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 2.412,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Disopyramide",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.946,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Dopamine",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 6.528,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Doxepin",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.579,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Electrophoresis (protein)",
+      "Specimen": "",
+      "ConvUnit": "",
+      "Factor": null,
+      "SI_Unit": ""
+    },
+    {
+      "Analyte": "Proportion of total protein",
+      "Specimen": "",
+      "ConvUnit": "",
+      "Factor": null,
+      "SI_Unit": ""
+    },
+    {
+      "Analyte": "Albumin",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "α1-Globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": " α2-Globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "ß-Globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "γ-Globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Concentration",
+      "Specimen": "",
+      "ConvUnit": "",
+      "Factor": null,
+      "SI_Unit": ""
+    },
+    {
+      "Analyte": "Albumin",
+      "Specimen": "Serum",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "α1-Globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "α2-Globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "ß-Globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "γ-Globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Ephedrine (toxic)",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 6.052,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Epinephrine",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 5.459,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Erythrocyte sedimentation rate",
+      "Specimen": "Whole blood",
+      "ConvUnit": "mm/h",
+      "Factor": 1,
+      "SI_Unit": "mm/h"
+    },
+    {
+      "Analyte": "Erythropoietin",
+      "Specimen": "Serum",
+      "ConvUnit": "mIU/mL",
+      "Factor": 1,
+      "SI_Unit": "IU/L"
+    },
+    {
+      "Analyte": "Estradiol (E2 )",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/mL",
+      "Factor": 3.671,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Estriol (E3 )",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.467,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Estrogens (total)",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/mL",
+      "Factor": 1,
+      "SI_Unit": "ng/L"
+    },
+    {
+      "Analyte": "Estrone (E1 )",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 3.698,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Ethanol (ethyl alcohol)",
+      "Specimen": "Serum, whole blood",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.2171,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Ethchlorvynol (toxic)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 6.915,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Ethosuximide",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 7.084,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Ethylene glycol (toxic)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.1611,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Fatty acids (nonesterified)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.0355,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Fecal fat (as stearic acid)",
+      "Specimen": "Stool",
+      "ConvUnit": "g/d",
+      "Factor": 1,
+      "SI_Unit": "g/24 h"
+    },
+    {
+      "Analyte": "Fentanyl",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.972,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Ferritin",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "α1-Fetoprotein",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Fibrin degradation products",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 1,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Fibrinogen",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Flecainide",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.413,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Fluoride",
+      "Specimen": "Whole blood",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.5263,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Fluoxetine",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.00323,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Flurazepam (toxic)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.578,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Folate (folic acid)",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 2.266,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Follicle-stimulating hormone (FSH)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mIU/mL",
+      "Factor": 1,
+      "SI_Unit": "IU/L"
+    },
+    {
+      "Analyte": "Fructosamine",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 5.581,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Fructose",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 55.506,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Galactose",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.0555,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Gastrin",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.481,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Gentamicin",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.09,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Glucagon",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 1,
+      "SI_Unit": "ng/L"
+    },
+    {
+      "Analyte": "Glucose",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.0555,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Glucose-6-phosphate dehydrogenase",
+      "Specimen": "Whole blood",
+      "ConvUnit": "U/g hemoglobin",
+      "Factor": 0.0167,
+      "SI_Unit": "nkat/g hemoglobin"
+    },
+    {
+      "Analyte": "Glutamic acid",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 67.967,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Glutamine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 68.423,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "γ-Glutamyltransferase (GGT)",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "Glutethimide",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.603,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Glycerol (free)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.1086,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Glycine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 133.2,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Gold",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 50.77,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Growth hormone (GH)",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Haloperidol",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 2.66,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Haptoglobin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Hematocrit",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Hemoglobin",
+      "Specimen": "Whole blood",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Mean corpuscular hemoglobin (MCH)",
+      "Specimen": "Whole blood",
+      "ConvUnit": "pg/cell",
+      "Factor": 1,
+      "SI_Unit": "pg/cell"
+    },
+    {
+      "Analyte": "Mean corpuscular hemoglobin concentration (MCHC)",
+      "Specimen": "Whole blood",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Mean corpuscular volume (MCV)",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µm3",
+      "Factor": 1,
+      "SI_Unit": "fL"
+    },
+    {
+      "Analyte": "Hemoglobin A1c (glycated hemoglobin)",
+      "Specimen": "Whole blood",
+      "ConvUnit": "% of total hemoglobin",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of total hemoglobin"
+    },
+    {
+      "Analyte": "Hemoglobin A2",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Histamine",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/L",
+      "Factor": 8.997,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Histidine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 64.45,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Homocysteine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/L",
+      "Factor": 7.397,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Homovanillic acid",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 5.489,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Hydrocodone",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.34,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Hydromorphone",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 3504,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "β-Hydroxybutyric acid",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 96.06,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "5-Hydroxyindoleacetic acid (5-HIAA)",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 5.23,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Hydroxyproline",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 76.266,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Ibuprofen",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.848,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Imipramine",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.566,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Immunoglobulin A (IgA)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Immunoglobulin D (IgD)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Immunoglobulin E (IgE)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Immunoglobulin G (IgG)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Immunoglobulin M (IgM)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.01,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Insulin",
+      "Specimen": "Serum",
+      "ConvUnit": "µIU/mL",
+      "Factor": 6.945,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Insulinlike growth factor",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.131,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Iodine",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/L",
+      "Factor": 7.88,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Iron",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.179,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Iron-binding capacity",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.179,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Isoleucine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 76.236,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Isoniazid",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 7.291,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Isopropanol (toxic)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/L",
+      "Factor": 0.0166,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Kanamycin",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.064,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Ketamine",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.206,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "17-Ketosteroids",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 3.33,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Lactate",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.111,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Lactate dehydrogenase (LDH)",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "LDH isoenzymes",
+      "Specimen": "",
+      "ConvUnit": "",
+      "Factor": null,
+      "SI_Unit": ""
+    },
+    {
+      "Analyte": "LD1",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "LD2",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "LD3",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "LD4",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "LD5",
+      "Specimen": "Serum",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Lead",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.0483,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Leucine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 76.237,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Lidocaine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.267,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Lipase",
+      "Specimen": "Serum",
+      "ConvUnit": "U/L",
+      "Factor": 0.0167,
+      "SI_Unit": "µkat/L"
+    },
+    {
+      "Analyte": "Lipoprotein(a) [Lp(a)]",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.1,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Lithium",
+      "Specimen": "Serum",
+      "ConvUnit": "mEq/L",
+      "Factor": 1,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Lorazepam",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.114,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Luteinizing hormone (LH)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mIU/mL",
+      "Factor": 1,
+      "SI_Unit": "IU/L"
+    },
+    {
+      "Analyte": "Lycopene",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 1.863,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Lysergic acid diethylamide",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 3092,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Lysine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 68.404,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Lysozyme",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Magnesium",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.4114,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Manganese",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/L",
+      "Factor": 18.202,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Maprotiline",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Melatonin",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/L",
+      "Factor": 4.305,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Meperidine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 4.043,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Mercury",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/L",
+      "Factor": 4.985,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Metanephrine (total)",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 5.07,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Metformin",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 7.742,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Methadone",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.00323,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Methamphetamine",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 6.7,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Methanol",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 0.0312,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Methaqualone",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.995,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Methemoglobin",
+      "Specimen": "Whole blood",
+      "ConvUnit": "g/dL",
+      "Factor": 155,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Methemoglobin",
+      "Specimen": "Whole blood",
+      "ConvUnit": "% of total hemoglobin",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of total hemoglobin"
+    },
+    {
+      "Analyte": "Methicillin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 2.636,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Methionine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 67.02,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Methotrexate",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/L",
+      "Factor": 2200,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Methyldopa",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.735,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Metoprolol",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.74,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "ß 2 -Microglobulin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 1,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Morphine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.504,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Myoglobin",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/L",
+      "Factor": 0.05814,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Naproxen",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.343,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Niacin (nicotinic acid)",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 8.123,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Nickel",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/L",
+      "Factor": 17.033,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Nicotine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/L",
+      "Factor": 6.164,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Nitrogen (nonprotein)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.714,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Nitroprusside (as thiocyanate)",
+      "Specimen": "",
+      "ConvUnit": "µg/mL",
+      "Factor": 17.2,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Norepinephrine",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 5.911,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Nortriptyline",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.797,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Ornithine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 75.666,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Osmolality",
+      "Specimen": "Serum",
+      "ConvUnit": "mOsm/kg",
+      "Factor": 1,
+      "SI_Unit": "mmol/kg"
+    },
+    {
+      "Analyte": "Osteocalcin",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Oxalate",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/mL",
+      "Factor": 11.107,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Oxazepam",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.487,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Oxycodone",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.171,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Oxygen, partial pressure (Po 2 )",
+      "Specimen": "Arterial blood",
+      "ConvUnit": "mm Hg",
+      "Factor": 0.133,
+      "SI_Unit": "kPa"
+    },
+    {
+      "Analyte": "Paraquat",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/mL",
+      "Factor": 5.369,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Parathyroid hormone",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/mL",
+      "Factor": 1,
+      "SI_Unit": "ng/L"
+    },
+    {
+      "Analyte": "Pentobarbital",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.419,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Pepsinogen",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Phencyclidine (toxic)",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 4.109,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Phenobarbital",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.31,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Phenylalanine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 60.544,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Phenylpropanolamine",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 6613,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Phenytoin",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "mg/L",
+      "Factor": 3.968,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Phosphorus (inorganic)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.323,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Placental lactogen",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 46.296,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Plasminogen (antigenic)",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.113,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Plasminogen activator inhibitor",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 22.19,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Platelet count (thrombocytes)",
+      "Specimen": "Whole blood",
+      "ConvUnit": "×103/µL",
+      "Factor": 1,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Potassium",
+      "Specimen": "Serum",
+      "ConvUnit": "mEq/L",
+      "Factor": 1,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Prealbumin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 10,
+      "SI_Unit": "mg/L"
+    },
+    {
+      "Analyte": "Pregnanediol",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 3.12,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Pregnanetriol",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 2.972,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Primidone",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.582,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Procainamide",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.25,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Progesterone",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.18,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Prolactin",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/L",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Proline",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 86.858,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Propoxyphene",
+      "Specimen": "Plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.946,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Propranolol",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 3.856,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Prostate-specific antigen",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Protein (total)",
+      "Specimen": "Serum",
+      "ConvUnit": "g/dL",
+      "Factor": 10,
+      "SI_Unit": "g/L"
+    },
+    {
+      "Analyte": "Prothrombin time (PT)",
+      "Specimen": "Plasma",
+      "ConvUnit": "s",
+      "Factor": 1,
+      "SI_Unit": "s"
+    },
+    {
+      "Analyte": "Protoporphyrin",
+      "Specimen": "Red blood cells",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.0178,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Protriptyline",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/dL",
+      "Factor": 3.787,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Pyruvate",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 113.56,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Quinidine",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.082,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Red blood cell count",
+      "Specimen": "Whole blood",
+      "ConvUnit": "×106/µL",
+      "Factor": 1,
+      "SI_Unit": "×1012/L"
+    },
+    {
+      "Analyte": "Renin",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.0237,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Reticulocyte count",
+      "Specimen": "Whole blood",
+      "ConvUnit": "×103/µL",
+      "Factor": 1,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Reticulocyte count",
+      "Specimen": "Whole blood",
+      "ConvUnit": "% of red blood cells",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of red blood cells"
+    },
+    {
+      "Analyte": "Rifampin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 1.215,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Salicylates",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 7.24,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Selenium",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/L",
+      "Factor": 0.0127,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Serine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 95.156,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Serotonin (5-hydroxytryptamine)",
+      "Specimen": "Whole blood",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.00568,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Sex hormone-binding globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 8.896,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Sodium",
+      "Specimen": "Serum",
+      "ConvUnit": "mEq/L",
+      "Factor": 1,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Somatomedin C (insulinlike growth factor)",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 0.131,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Somatostatin",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.611,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Streptomycin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 1.719,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Strychnine",
+      "Specimen": "Whole blood",
+      "ConvUnit": "mg/L",
+      "Factor": 2.99,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Substance P",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.742,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Sulfate",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/L",
+      "Factor": 10.41,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Sulfmethemoglobin",
+      "Specimen": "Whole blood",
+      "ConvUnit": "% of total hemoglobin",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of total hemoglobin"
+    },
+    {
+      "Analyte": "Taurine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 79.91,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Testosterone",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/dL",
+      "Factor": 0.0347,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Tetrahydrocannabinol",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.18,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Theophylline",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 5.55,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Thiopental",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.144,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Thioridazine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.699,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Threonine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 84,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Thrombin time",
+      "Specimen": "Plasma",
+      "ConvUnit": "s",
+      "Factor": 1,
+      "SI_Unit": "s"
+    },
+    {
+      "Analyte": "Thyroglobulin",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Thyrotropin",
+      "Specimen": "Serum",
+      "ConvUnit": "mIU/L",
+      "Factor": 1,
+      "SI_Unit": "mIU/L"
+    },
+    {
+      "Analyte": "Thyroxine, free (FT 4 )",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/dL",
+      "Factor": 12.871,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Thyroxine, total (T 4 )",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 12.871,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Thyroxine-binding globulin",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 17.094,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Tissue plasminogen activator",
+      "Specimen": "Plasma",
+      "ConvUnit": "IU/mL",
+      "Factor": 1000,
+      "SI_Unit": "IU/L"
+    },
+    {
+      "Analyte": "Tobramycin",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.139,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Tocainide",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 5.201,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Tolbutamide",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.7,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Transferrin",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.123,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Triglycerides",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.0113,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Triiodothyronine, free (FT3)",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/dL",
+      "Factor": 0.0154,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Triiodothyronine, total (T3)",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/dL",
+      "Factor": 0.0154,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Troponin I",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Troponin T",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 1,
+      "SI_Unit": "µg/L"
+    },
+    {
+      "Analyte": "Tryptophan",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 48.967,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Tyrosine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 55.19,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Urea nitrogen",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.357,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Uric acid",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 0.0595,
+      "SI_Unit": "mmol/L"
+    },
+    {
+      "Analyte": "Urobilinogen",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 1.7,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Valine",
+      "Specimen": "Plasma",
+      "ConvUnit": "mg/dL",
+      "Factor": 85.361,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Valproic acid",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 6.934,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Vancomycin",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 0.69,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Vanillylmandelic acid (VMA)",
+      "Specimen": "Urine",
+      "ConvUnit": "mg/24 h",
+      "Factor": 5.046,
+      "SI_Unit": "µmol/d"
+    },
+    {
+      "Analyte": "Vasoactive intestinal polypeptide",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.296,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Vasopressin",
+      "Specimen": "Plasma",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.923,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Verapamil",
+      "Specimen": "Serum, Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 2.2,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Vitamin A (retinol)",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.0349,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Vitamin B1 (thiamine)",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 29.6,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Vitamin B2 (riboflavin)",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 26.6,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Vitamin B3",
+      "Specimen": "Whole blood",
+      "ConvUnit": "µg/mL",
+      "Factor": 4.56,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Vitamin B6 (pyridoxine)",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 4.046,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Vitamin B12",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/mL",
+      "Factor": 0.7378,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Vitamin C (ascorbic acid)",
+      "Specimen": "Serum",
+      "ConvUnit": "mg/dL",
+      "Factor": 56.78,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Vitamin D (1,25 dihydroxyvitamin D)",
+      "Specimen": "Serum",
+      "ConvUnit": "pg/mL",
+      "Factor": 2.4,
+      "SI_Unit": "pmol/L"
+    },
+    {
+      "Analyte": "Vitamin D (25-hydroxyvitamin D)",
+      "Specimen": "Plasma",
+      "ConvUnit": "ng/mL",
+      "Factor": 2.496,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Vitamin E (α-tocopherol)",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/mL",
+      "Factor": 2.322,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Vitamin K",
+      "Specimen": "Serum",
+      "ConvUnit": "ng/mL",
+      "Factor": 2.22,
+      "SI_Unit": "nmol/L"
+    },
+    {
+      "Analyte": "Warfarin",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.247,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "White blood cell count",
+      "Specimen": "Whole blood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Differential count",
+      "Specimen": "",
+      "ConvUnit": "",
+      "Factor": null,
+      "SI_Unit": ""
+    },
+    {
+      "Analyte": "Neutrophils-segmented",
+      "Specimen": "Whole blood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": " Neutrophils-bands",
+      "Specimen": "Whole blood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Lymphocytes",
+      "Specimen": "Whole blood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Monocytes",
+      "Specimen": "Whole blood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Eosinophils",
+      "Specimen": "Whole blood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Basophils",
+      "Specimen": "Whole blood",
+      "ConvUnit": "/µL",
+      "Factor": 0.001,
+      "SI_Unit": "×109/L"
+    },
+    {
+      "Analyte": "Differential count (number fraction)",
+      "Specimen": "",
+      "ConvUnit": "",
+      "Factor": null,
+      "SI_Unit": ""
+    },
+    {
+      "Analyte": "Neutrophils-segmented",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Neutrophils-bands",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Lymphocytes",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Monocytes",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Eosinophils",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Basophils",
+      "Specimen": "Whole blood",
+      "ConvUnit": "%",
+      "Factor": 0.01,
+      "SI_Unit": "Proportion of 1.0"
+    },
+    {
+      "Analyte": "Zidovudine",
+      "Specimen": "Serum, plasma",
+      "ConvUnit": "µg/mL",
+      "Factor": 3.7,
+      "SI_Unit": "µmol/L"
+    },
+    {
+      "Analyte": "Zinc",
+      "Specimen": "Serum",
+      "ConvUnit": "µg/dL",
+      "Factor": 0.153,
+      "SI_Unit": "µmol/L"
+    }
+   ]
