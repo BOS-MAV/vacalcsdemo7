@@ -653,7 +653,7 @@ export class ResultsCalcService {
         xbeta = ageWeight + ageLogSQWeight+sexWeight + raceWeight + smokerWeight + totchlWeight+ chlAgeWeight+ hdlcWeight+ageHdlWeight+
                 bpSysbpMedWeight+bpSysbpAgeWeight+ageSmokeWeight+ statinWeight+ a1cWeight+egfrWeight+ insulinWeight+sulfonylWeight+
                 otherDiabWeight+microAlbWeight;
-        eXbeta = Math.exp(xbeta-12.3901);
+        eXbeta = Math.exp(xbeta+12.3901);
         risk[3] = 1 - Math.pow(0.98686,eXbeta);
         risk[3]  = numberFormat(risk[3]*100,2);
         this._results = risk;
